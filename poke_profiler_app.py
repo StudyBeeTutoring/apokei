@@ -19,17 +19,36 @@ DATA_PATH = "pokemon_data.csv"
 
 # --- GOOGLE SHEETS CONNECTION (MANUAL, ROBUST METHOD) ---
 @st.cache_resource
+# --- Replace the existing function with this one for debugging ---
+
+@st.cache_resource
 def connect_to_gsheets():
     """Establishes a connection to Google Sheets using gspread and st.secrets."""
     try:
+        # --- Start of Debugging Block ---
+        st.toast("Attempting to connect to Google Sheets...", icon="🔌")
+        # --- End of Debugging Block ---
+        
         scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
+        
+        # This will check if the necessary keys exist in your secrets
+        if "client_email" not in st.secrets or "private_key" not in st.secrets:
+            st.error("Missing Google Sheets credentials in st.secrets. Please check your secrets.toml configuration.")
+            st.stop()
+            
         creds = Credentials.from_service_account_info(st.secrets, scopes=scopes)
         client = gspread.authorize(creds)
+        
+        # --- Start of Debugging Block ---
+        st.toast("Successfully authenticated with Google!", icon="✅")
+        # --- End of Debugging Block ---
+        
         return client
     except Exception as e:
-        st.error(f"Failed to connect to Google Sheets. Check your secrets. Details: {e}")
+        # This will now display the specific error message in the app UI
+        st.error("Failed to connect to Google Sheets. Please check your secrets configuration and API permissions.")
+        st.error(f"Details: {e}")
         st.stop()
-
 def log_feedback_to_sheet(feedback_data):
     """Logs a new row of feedback data to the specified Google Sheet."""
     try:
