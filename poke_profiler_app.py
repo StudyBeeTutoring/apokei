@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
-from sqlalchemy import text
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import RandomForestClassifier
 import os
 import random
 import joblib
-from streamlit_gsheets.connection import GSheetsConnection
+import gspread
+from google.oauth2.service_account import Credentials
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="centered")
@@ -16,28 +16,55 @@ st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="center
 MODEL_PATH = "trained_pokemon_model.joblib"
 DATA_PATH = "pokemon_data.csv"
 
-# --- GOOGLE SHEETS CONNECTION ---
-# This establishes a connection to Google Sheets using the secrets you provided.
-conn_gsheets = st.connection("gsheets", type=GSheetsConnection)
+# --- GOOGLE SHEETS CONNECTION (MANUAL, ROBUST METHOD) ---
+@st.cache_resource
+def connect_to_gsheets():
+    """Establishes a connection to Google Sheets using gspread and st.secrets."""
+    try:
+        # Define the scope of access
+        scopes = [
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive"
+        ]
+        # Get credentials from Streamlit secrets
+        creds = Credentials.from_service_account_info(
+            st.secrets, scopes=scopes
+        )
+        # Authorize and return the gspread client
+        client = gspread.authorize(creds)
+        return client
+    except Exception as e:
+        st.error(f"Failed to connect to Google Sheets. Please check your secrets configuration. Details: {e}")
+        st.stop()
+
+def log_feedback_to_sheet(feedback_data):
+    """Logs a new row of feedback data to the specified Google Sheet."""
+    try:
+        client = connect_to_gsheets()
+        # IMPORTANT: Replace "PokeProfilerFeedback" with the exact name of your Google Sheet.
+        sheet = client.open("PokeProfilerFeedback").sheet1
+        # The columns in your Google Sheet must be:
+        # environment, battle_style, core_strength, personality, pokemon_name
+        sheet.append_row(list(feedback_data.values()))
+        return True
+    except Exception as e:
+        st.error(f"Failed to write to Google Sheet. Details: {e}")
+        return False
 
 # --- DATA & MODEL LOADING ---
 @st.cache_resource
 def load_model():
-    """Loads the pre-trained model from disk."""
     if os.path.exists(MODEL_PATH):
         return joblib.load(MODEL_PATH)
     else:
-        st.error(f"Fatal Error: `{MODEL_PATH}` not found. Please pre-train the model and upload it.")
-        st.stop()
+        st.error(f"Fatal Error: `{MODEL_PATH}` not found."); st.stop()
 
 @st.cache_data
 def load_pokemon_data():
-    """Loads the Pokémon data from the CSV file."""
     if os.path.exists(DATA_PATH):
         return pd.read_csv(DATA_PATH)
     else:
-        st.error(f"Fatal Error: `{DATA_PATH}` not found. Please create it first.")
-        st.stop()
+        st.error(f"Fatal Error: `{DATA_PATH}` not found."); st.stop()
 
 # --- INITIALIZATION ---
 pipeline = load_model()
@@ -80,8 +107,7 @@ if submitted:
     
     st.subheader("Your Pokémon Partner is...")
     col1, col2 = st.columns([1, 2])
-    with col1:
-        st.image(img_to_display, width=200)
+    with col1: st.image(img_to_display, width=200)
     with col2:
         title = f"{prediction} ✨" if is_shiny else prediction
         st.markdown(f"## {title}")
@@ -91,7 +117,6 @@ if submitted:
         stat_cols[0].metric("HP", pokemon_info['hp'])
         stat_cols[1].metric("Attack", pokemon_info['attack'])
         stat_cols[2].metric("Defense", pokemon_info['defense'])
-    
     st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
     
     st.write("---")
@@ -107,15 +132,9 @@ if submitted:
 if st.session_state.get('feedback_given', False):
     profile_data = st.session_state.last_input[0]
     profile_data['pokemon_name'] = st.session_state.last_prediction
-    feedback_df = pd.DataFrame([profile_data])
     
-    try:
-        # Use the conn.update() method as shown in the guide
-        conn_gsheets.update(worksheet="PokeProfilerFeedback", data=feedback_df)
+    if log_feedback_to_sheet(profile_data):
         st.toast("Thank you! The Profiler is now learning from your feedback.", icon="✨")
-    except Exception as e:
-        st.error("Could not save feedback. Please ensure your Google Sheets connection is set up correctly.")
-        st.error(f"Details: {e}")
     
     del st.session_state.feedback_given
     del st.session_state.last_input
