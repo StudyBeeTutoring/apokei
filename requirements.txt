@@ -1,8 +1,7 @@
 streamlit
 pandas
-sqlalchemy
 scikit-learn
 joblib
 gspread
 google-auth
-streamlit-gsheets-connection
+google-auth-oauthlib
