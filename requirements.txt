@@ -3,4 +3,6 @@ pandas
 sqlalchemy
 scikit-learn
 joblib
-streamlit-gsheets-connection
+gspread
+google-auth
+streamlit-gsheets
