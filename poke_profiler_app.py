@@ -17,105 +17,56 @@ st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="center
 MODEL_PATH = "trained_pokemon_model.joblib"
 DATA_PATH = "pokemon_data.csv"
 
-# --- GOOGLE SHEETS CONNECTION (MANUAL, ROBUST METHOD) ---
-@st.cache_resource
-# --- Replace the existing function with this one for debugging ---
-
+# --- GOOGLE SHEETS CONNECTION ---
 @st.cache_resource
 def connect_to_gsheets():
-    """Establishes a connection to Google Sheets using gspread and st.secrets."""
     try:
-        # --- Start of Debugging Block ---
-        st.toast("Attempting to connect to Google Sheets...", icon="🔌")
-        # --- End of Debugging Block ---
-        
         scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-        
-        # This will check if the necessary keys exist in your secrets
-        if "client_email" not in st.secrets or "private_key" not in st.secrets:
-            st.error("Missing Google Sheets credentials in st.secrets. Please check your secrets.toml configuration.")
-            st.stop()
-            
         creds = Credentials.from_service_account_info(st.secrets, scopes=scopes)
         client = gspread.authorize(creds)
-        
-        # --- Start of Debugging Block ---
-        st.toast("Successfully authenticated with Google!", icon="✅")
-        # --- End of Debugging Block ---
-        
         return client
     except Exception as e:
-        # This will now display the specific error message in the app UI
-        st.error("Failed to connect to Google Sheets. Please check your secrets configuration and API permissions.")
-        st.error(f"Details: {e}")
-        st.stop()
+        st.error(f"Failed to connect to Google Sheets. Check secrets. Details: {e}"); st.stop()
+
 def log_feedback_to_sheet(feedback_data):
-    """Logs a new row of feedback data to the specified Google Sheet."""
     try:
         client = connect_to_gsheets()
-        # IMPORTANT: Replace "PokeProfilerFeedback" with the exact name of your Google Sheet.
         sheet = client.open("PokeProfilerFeedback").sheet1
         sheet.append_row(list(feedback_data.values()))
         return True
     except Exception as e:
-        st.error(f"Failed to write to Google Sheet. Details: {e}")
-        return False
+        st.error(f"Failed to write to Google Sheet. Details: {e}"); return False
 
 # --- DATA & MODEL LOADING ---
 @st.cache_resource
 def load_model():
-    if os.path.exists(MODEL_PATH):
-        return joblib.load(MODEL_PATH)
-    else:
-        st.error(f"Fatal Error: `{MODEL_PATH}` not found. Please pre-train and upload the model."); st.stop()
+    if os.path.exists(MODEL_PATH): return joblib.load(MODEL_PATH)
+    else: st.error(f"Fatal Error: `{MODEL_PATH}` not found."); st.stop()
 
 @st.cache_data
 def load_pokemon_data():
-    if os.path.exists(DATA_PATH):
-        return pd.read_csv(DATA_PATH)
-    else:
-        st.error(f"Fatal Error: `{DATA_PATH}` not found."); st.stop()
+    if os.path.exists(DATA_PATH): return pd.read_csv(DATA_PATH)
+    else: st.error(f"Fatal Error: `{DATA_PATH}` not found."); st.stop()
 
 # --- INITIALIZATION ---
 pipeline = load_model()
 pokemon_data_df = load_pokemon_data()
 POKEMON_INFO = pokemon_data_df.set_index('pokemon_name').to_dict('index')
 
-# --- MAIN APP LAYOUT ---
-st.title("Poké-Profiler 🔮")
-st.markdown("Answer the call of the wild! Describe yourself to discover your true Pokémon partner.")
-st.write("---")
-
-with st.form("profiler_form"):
-    st.subheader("Tell us about yourself...")
-    environment = st.selectbox("Which environment do you feel most at home in?", ('Forests & Jungles', 'Oceans & Lakes', 'Mountains & Caves', 'Cities & Plains', 'Mysterious Places'))
-    personality = st.radio("Which best describes your personality?", ['Bold & Competitive', 'Calm & Loyal', 'Mysterious & Cunning', 'Energetic & Free-Spirited', 'Adaptable & Friendly'])
-    core_strength = st.selectbox("What do you value most in a partner?", ('Raw Power', 'Resilience', 'Speed & Evasion', 'Versatility'))
-    battle_style = st.radio("How do you approach challenges?", ['Physical & Head-on', 'Strategic & Long-Range', 'Quick & Agile', 'Balanced & Versatile'])
-    destiny_checked = st.checkbox("Do you feel a touch of destiny?", help="Checking this may lead to a legendary encounter...")
-    submitted = st.form_submit_button("Discover My Partner!")
-
-if submitted:
-    input_data = pd.DataFrame([[environment, battle_style, core_strength, personality]],
-                              columns=['environment', 'battle_style', 'core_strength', 'personality'])
-    
-    prediction = pipeline.predict(input_data)[0]
-    is_legendary_encounter = False
-    if destiny_checked and personality == 'Mysterious & Cunning' and core_strength == 'Raw Power':
-        if random.randint(1, 20) == 1:
-            legendary_pool = pokemon_data_df[pokemon_data_df['is_legendary'] | pokemon_data_df['is_mythical']]
-            if not legendary_pool.empty:
-                prediction = legendary_pool.sample(n=1)['pokemon_name'].iloc[0]
-                is_legendary_encounter = True
-
-    is_shiny = (random.randint(1, 100) == 1)
-    pokemon_info = POKEMON_INFO.get(prediction)
-    img_to_display = pokemon_info['shiny_img_url'] if is_shiny else pokemon_info['img_url']
+# --- UI COMPONENTS ---
+def display_prediction(prediction_details):
+    """A dedicated function to display the prediction results."""
+    prediction = prediction_details['name']
+    is_legendary_encounter = prediction_details['is_legendary']
+    is_shiny = prediction_details['is_shiny']
     
     if is_legendary_encounter: st.success("A legendary force answers your call...", icon="🌟")
     if is_shiny: st.success("Whoa! A rare Shiny partner appeared!", icon="✨"); st.balloons()
     
     st.subheader("Your Pokémon Partner is...")
+    pokemon_info = POKEMON_INFO.get(prediction)
+    img_to_display = pokemon_info['shiny_img_url'] if is_shiny else pokemon_info['img_url']
+    
     col1, col2 = st.columns([1, 2])
     with col1: st.image(img_to_display, width=200)
     with col2:
@@ -129,33 +80,74 @@ if submitted:
         stat_cols[2].metric("Defense", pokemon_info['defense'])
     st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
     
-    # --- REFACTORED FEEDBACK & LOGGING LOGIC ---
     st.write("---")
     st.write("**Is this your perfect partner?** Your feedback helps the Profiler get smarter!")
     
-    # Prepare the data dictionary *before* the buttons are created.
-    profile_data_to_log = input_data.to_dict('records')[0]
+    profile_data_to_log = st.session_state.last_input[0]
     profile_data_to_log['pokemon_name'] = prediction
     
     feedback_cols = st.columns(3)
     
-    # Each button now directly calls the logging function.
-    if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True):
+    if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True, key="fb_perfect"):
         if log_feedback_to_sheet(profile_data_to_log):
             st.toast("Thank you! Your bond has strengthened the Profiler!", icon="✨")
-            time.sleep(2) # Give user time to read the toast
-            st.rerun()
+            del st.session_state.prediction_details # Clear the state to return to quiz
+            time.sleep(2); st.rerun()
 
-    if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True):
+    if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True, key="fb_close"):
         if log_feedback_to_sheet(profile_data_to_log):
             st.toast("Thanks! Your feedback is valuable.", icon="👍")
-            time.sleep(2)
-            st.rerun()
+            del st.session_state.prediction_details
+            time.sleep(2); st.rerun()
 
-    if feedback_cols[2].button("❌ Not quite right", use_container_width=True):
+    if feedback_cols[2].button("❌ Not quite right", use_container_width=True, key="fb_not"):
         if log_feedback_to_sheet(profile_data_to_log):
             st.toast("Got it! Thanks for helping the Profiler learn.", icon="💡")
-            time.sleep(2)
-            st.rerun()
+            del st.session_state.prediction_details
+            time.sleep(2); st.rerun()
 
-# --- The old logging block at the end of the file is now gone. ---
+
+# --- MAIN APP LAYOUT ---
+st.title("Poké-Profiler 🔮")
+st.markdown("Answer the call of the wild! Describe yourself to discover your true Pokémon partner.")
+st.write("---")
+
+# --- STATE-BASED UI ROUTING ---
+if 'prediction_details' in st.session_state:
+    # If a prediction result exists in the session state, display it
+    display_prediction(st.session_state.prediction_details)
+else:
+    # Otherwise, display the quiz form
+    with st.form("profiler_form"):
+        st.subheader("Tell us about yourself...")
+        environment = st.selectbox("Which environment do you feel most at home in?", ('Forests & Jungles', 'Oceans & Lakes', 'Mountains & Caves', 'Cities & Plains', 'Mysterious Places'))
+        personality = st.radio("Which best describes your personality?", ['Bold & Competitive', 'Calm & Loyal', 'Mysterious & Cunning', 'Energetic & Free-Spirited', 'Adaptable & Friendly'])
+        core_strength = st.selectbox("What do you value most in a partner?", ('Raw Power', 'Resilience', 'Speed & Evasion', 'Versatility'))
+        battle_style = st.radio("How do you approach challenges?", ['Physical & Head-on', 'Strategic & Long-Range', 'Quick & Agile', 'Balanced & Versatile'])
+        destiny_checked = st.checkbox("Do you feel a touch of destiny?", help="Checking this may lead to a legendary encounter...")
+        submitted = st.form_submit_button("Discover My Partner!")
+
+    if submitted:
+        input_data = pd.DataFrame([[environment, battle_style, core_strength, personality]],
+                                  columns=['environment', 'battle_style', 'core_strength', 'personality'])
+        
+        prediction = pipeline.predict(input_data)[0]
+        is_legendary_encounter = False
+        if destiny_checked and personality == 'Mysterious & Cunning' and core_strength == 'Raw Power':
+            if random.randint(1, 20) == 1:
+                legendary_pool = pokemon_data_df[pokemon_data_df['is_legendary'] | pokemon_data_df['is_mythical']]
+                if not legendary_pool.empty:
+                    prediction = legendary_pool.sample(n=1)['pokemon_name'].iloc[0]
+                    is_legendary_encounter = True
+
+        # Store all prediction details in a single session state dictionary
+        st.session_state.prediction_details = {
+            "name": prediction,
+            "is_legendary": is_legendary_encounter,
+            "is_shiny": (random.randint(1, 100) == 1),
+        }
+        
+        # Save the raw input for the logging function later
+        st.session_state.last_input = input_data.to_dict('records')
+        
+        st.rerun() # Rerun to trigger the display_prediction function
