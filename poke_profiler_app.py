@@ -1,3 +1,5 @@
+# poke_profiler_app.py (No changes needed in this file)
+
 import streamlit as st
 import pandas as pd
 from sqlalchemy import text
@@ -5,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import OneHotEncoder
 import os
 import random
-from streamlit_extras.keyboard_text import key_to_text, get_keyboard_text
+from streamlit_extras.keyboard_text import key_to_text # This line will now work
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler 2.0", page_icon="🔮", layout="wide")
@@ -105,7 +107,6 @@ with tab1:
             submitted = st.form_submit_button("Discover My Partner!")
 
         if submitted:
-            # --- PREDICTION LOGIC ---
             input_data = pd.DataFrame([[environment, battle_style, core_strength, personality]], columns=['environment', 'battle_style', 'core_strength', 'personality'])
             input_encoded = pd.DataFrame(encoder.transform(input_data), columns=encoder.get_feature_names_out(['environment', 'battle_style', 'core_strength', 'personality']))
             input_processed = input_encoded.reindex(columns=trained_columns, fill_value=0)
@@ -113,7 +114,6 @@ with tab1:
             prediction = model.predict(input_processed)[0]
             is_legendary_encounter = False
             
-            # --- Legendary/Mythical Encounter Logic ---
             if destiny_checked and personality == 'Mysterious & Cunning' and core_strength == 'Raw Power':
                 if random.randint(1, 20) == 1: # 5% chance
                     legendary_pool = pokemon_data_df[pokemon_data_df['is_legendary'] | pokemon_data_df['is_mythical']]
@@ -121,17 +121,12 @@ with tab1:
                         prediction = legendary_pool.sample(n=1)['pokemon_name'].iloc[0]
                         is_legendary_encounter = True
 
-            # --- Shiny Chance Logic ---
             is_shiny = (random.randint(1, 100) == 1)
             pokemon_info = POKEMON_INFO.get(prediction)
             img_to_display = pokemon_info['shiny_img_url'] if is_shiny else pokemon_info['img_url']
             
-            # --- DISPLAY PREDICTION ---
-            if is_legendary_encounter:
-                st.success("A legendary force answers your call...", icon="🌟")
-            if is_shiny:
-                st.success("Whoa! A rare Shiny partner appeared!", icon="✨")
-                st.balloons()
+            if is_legendary_encounter: st.success("A legendary force answers your call...", icon="🌟")
+            if is_shiny: st.success("Whoa! A rare Shiny partner appeared!", icon="✨"); st.balloons()
             
             st.subheader("Your Pokémon Partner is...")
             col1, col2 = st.columns([1, 2])
@@ -141,8 +136,6 @@ with tab1:
                 title = f"{prediction} ✨" if is_shiny else prediction
                 st.markdown(f"## {title}")
                 st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`")
-                
-                # Display Base Stats
                 st.write("**Base Stats:**")
                 stat_cols = st.columns(3)
                 stat_cols[0].metric("HP", pokemon_info['hp'])
@@ -150,8 +143,7 @@ with tab1:
                 stat_cols[2].metric("Defense", pokemon_info['defense'])
             
             st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
-
-            # --- SHARE & FEEDBACK ---
+            
             st.write("---")
             app_url = "https://your-app-url.streamlit.app" # Replace with your actual app URL
             share_text = f"My perfect Pokémon partner is {prediction}! 🔮 Find yours at the Poké-Profiler: {app_url}"
@@ -175,7 +167,6 @@ with st.sidebar:
     with st.expander("How The Profiler Learns", expanded=False):
         show_training_visualization()
 
-# --- LOGGING FEEDBACK TO DB ---
 if st.session_state.get('feedback_given', False):
     profile_data = st.session_state.last_input
     profile_data['pokemon_name'] = st.session_state.last_prediction
