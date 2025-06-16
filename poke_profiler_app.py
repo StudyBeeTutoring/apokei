@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 import os
 import random
 import joblib
-from streamlit_gsheets.connection import GSheetsConnection
+from streamlit_gsheets import GSheetsConnection
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="centered")
