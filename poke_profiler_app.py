@@ -177,10 +177,9 @@ with tab1:
             
             st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
             
-            # --- SHARE & FEEDBACK ---
             st.write("---")
             # IMPORTANT: Replace this with your actual app's URL once deployed!
-            app_url = "https://apokei.streamlit.app" 
+            app_url = "https://your-app-url.streamlit.app" 
             share_text = f"My perfect Pokémon partner is {prediction}! 🔮 Find yours at the Poké-Profiler: {app_url}"
             
             # --- CORRECTED SHARE BUTTON ---
