@@ -1,0 +1,1026 @@
+environment,battle_style,core_strength,personality,pokemon_name,img_url,type1
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Bulbasaur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Ivysaur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Venusaur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png,grass
+Mountains & Caves,Strategic & Long-Range,Speed & Evasion,Bold & Competitive,Charmander,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png,fire
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Charmeleon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png,fire
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Charizard,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png,fire
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Squirtle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Wartortle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Blastoise,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png,water
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Caterpie,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png,bug
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Metapod,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png,bug
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Butterfree,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png,bug
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Weedle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png,bug
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Kakuna,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Beedrill,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png,bug
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Pidgey,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Pidgeotto,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Pidgeot,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Rattata,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Raticate,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Spearow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Fearow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png,normal
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Ekans,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Arbok,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png,poison
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Pikachu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png,electric
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Raichu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png,electric
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Sandshrew,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png,ground
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Sandslash,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png,ground
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Nidoran-f,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png,poison
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Nidorina,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Nidoqueen,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Nidoran-m,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Nidorino,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Nidoking,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png,poison
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Clefairy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png,fairy
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Clefable,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png,fairy
+Mountains & Caves,Strategic & Long-Range,Resilience,Bold & Competitive,Vulpix,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png,fire
+Mountains & Caves,Quick & Agile,Resilience,Bold & Competitive,Ninetales,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png,fire
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Jigglypuff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png,normal
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Wigglytuff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png,normal
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Zubat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png,poison
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Golbat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png,poison
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Oddish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Gloom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Vileplume,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Paras,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Parasect,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Venonat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png,bug
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Venomoth,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png,bug
+Mountains & Caves,Physical & Head-on,Speed & Evasion,Bold & Competitive,Diglett,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png,ground
+Mountains & Caves,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Dugtrio,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png,ground
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Meowth,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Persian,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png,normal
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Psyduck,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Golduck,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png,water
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Mankey,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Primeape,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png,fighting
+Mountains & Caves,Balanced & Versatile,Raw Power,Bold & Competitive,Growlithe,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Arcanine,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png,fire
+Oceans & Lakes,Physical & Head-on,Speed & Evasion,Bold & Competitive,Poliwag,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png,water
+Oceans & Lakes,Physical & Head-on,Speed & Evasion,Bold & Competitive,Poliwhirl,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Poliwrath,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png,water
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Abra,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png,psychic
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Kadabra,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png,psychic
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Alakazam,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png,psychic
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Machop,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Machoke,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Machamp,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png,fighting
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Bellsprout,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Weepinbell,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Victreebel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png,grass
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Tentacool,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png,water
+Oceans & Lakes,Quick & Agile,Resilience,Adaptable & Friendly,Tentacruel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png,water
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Geodude,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png,rock
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Graveler,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png,rock
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Golem,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png,rock
+Mountains & Caves,Physical & Head-on,Speed & Evasion,Bold & Competitive,Ponyta,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png,fire
+Mountains & Caves,Quick & Agile,Speed & Evasion,Bold & Competitive,Rapidash,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png,fire
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Slowpoke,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Slowbro,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png,water
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Magnemite,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png,electric
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Magneton,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png,electric
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Farfetchd,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Doduo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png,normal
+Cities & Plains,Quick & Agile,Raw Power,Adaptable & Friendly,Dodrio,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png,normal
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Seel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png,water
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Dewgong,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png,water
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Grimer,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png,poison
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Muk,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png,poison
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Shellder,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Cloyster,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png,water
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Gastly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png,ghost
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Haunter,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png,ghost
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Gengar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png,ghost
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Onix,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png,rock
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Drowzee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png,psychic
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Hypno,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png,psychic
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Krabby,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Kingler,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png,water
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Voltorb,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png,electric
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Electrode,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png,electric
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Exeggcute,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Exeggutor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png,grass
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Cubone,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png,ground
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Marowak,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Hitmonlee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png,fighting
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Hitmonchan,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png,fighting
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Lickitung,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png,normal
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Koffing,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png,poison
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Weezing,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png,poison
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Rhyhorn,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Rhydon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png,ground
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Chansey,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png,normal
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Tangela,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png,grass
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Kangaskhan,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png,normal
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Horsea,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Seadra,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Goldeen,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Seaking,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png,water
+Oceans & Lakes,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Staryu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Starmie,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png,water
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Mr-mime,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png,psychic
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Scyther,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png,bug
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Jynx,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png,ice
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Electabuzz,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png,electric
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Magmar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png,fire
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Pinsir,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png,bug
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Tauros,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png,normal
+Oceans & Lakes,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Magikarp,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Gyarados,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png,water
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Lapras,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png,water
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Ditto,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png,normal
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Eevee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png,normal
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Vaporeon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png,water
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Jolteon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png,electric
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Flareon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png,fire
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Porygon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png,normal
+Mountains & Caves,Strategic & Long-Range,Resilience,Mysterious & Cunning,Omanyte,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png,rock
+Mountains & Caves,Strategic & Long-Range,Resilience,Mysterious & Cunning,Omastar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png,rock
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Kabuto,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Kabutops,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png,rock
+Mountains & Caves,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Aerodactyl,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png,rock
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Snorlax,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png,normal
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Articuno,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png,ice
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Zapdos,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png,electric
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Moltres,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png,fire
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Dratini,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png,dragon
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Dragonair,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png,dragon
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Dragonite,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png,dragon
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Mewtwo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png,psychic
+Mysterious Places,Quick & Agile,Resilience,Mysterious & Cunning,Mew,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png,psychic
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Chikorita,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png,grass
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Bayleef,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png,grass
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Meganium,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png,grass
+Mountains & Caves,Strategic & Long-Range,Speed & Evasion,Bold & Competitive,Cyndaquil,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png,fire
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Quilava,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png,fire
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Typhlosion,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png,fire
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Totodile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Croconaw,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Feraligatr,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png,water
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Sentret,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Furret,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png,normal
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Hoothoot,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png,normal
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Noctowl,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png,normal
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Ledyba,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png,bug
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Ledian,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Spinarak,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Ariados,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png,bug
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Crobat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png,poison
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Chinchou,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Lanturn,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png,water
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Pichu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png,electric
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Cleffa,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png,fairy
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Igglybuff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png,normal
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Togepi,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png,fairy
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Togetic,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png,fairy
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Natu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Xatu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png,psychic
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Mareep,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png,electric
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Flaaffy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png,electric
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Ampharos,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png,electric
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Bellossom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png,grass
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Marill,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Azumarill,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png,water
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Sudowoodo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png,rock
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Politoed,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png,water
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Hoppip,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png,grass
+Forests & Jungles,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Skiploom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png,grass
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Jumpluff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png,grass
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Aipom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png,normal
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Sunkern,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Sunflora,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png,grass
+Forests & Jungles,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Yanma,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png,bug
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Wooper,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Quagsire,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png,water
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Espeon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png,psychic
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Umbreon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png,dark
+Mysterious Places,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Murkrow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png,dark
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Slowking,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png,water
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Misdreavus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png,ghost
+Mysterious Places,Balanced & Versatile,Raw Power,Mysterious & Cunning,Unown,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png,psychic
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Wobbuffet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png,psychic
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Girafarig,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png,normal
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Pineco,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Forretress,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png,bug
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Dunsparce,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png,normal
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Gligar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png,ground
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Steelix,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png,steel
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Snubbull,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png,fairy
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Granbull,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png,fairy
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Qwilfish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png,water
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Scizor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png,bug
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Shuckle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Heracross,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png,bug
+Mysterious Places,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Sneasel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png,dark
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Teddiursa,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Ursaring,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png,normal
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Slugma,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png,fire
+Mountains & Caves,Strategic & Long-Range,Resilience,Bold & Competitive,Magcargo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png,fire
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Swinub,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png,ice
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Piloswine,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png,ice
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Corsola,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png,water
+Oceans & Lakes,Balanced & Versatile,Raw Power,Adaptable & Friendly,Remoraid,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png,water
+Oceans & Lakes,Balanced & Versatile,Raw Power,Adaptable & Friendly,Octillery,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png,water
+Oceans & Lakes,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Delibird,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png,ice
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Mantine,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png,water
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Skarmory,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png,steel
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Houndour,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png,dark
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Houndoom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png,dark
+Oceans & Lakes,Balanced & Versatile,Raw Power,Adaptable & Friendly,Kingdra,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png,water
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Phanpy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Donphan,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png,ground
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Porygon2,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Stantler,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png,normal
+Cities & Plains,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Smeargle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png,normal
+Mountains & Caves,Balanced & Versatile,Resilience,Bold & Competitive,Tyrogue,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png,fighting
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Hitmontop,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png,fighting
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Smoochum,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png,ice
+Cities & Plains,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Elekid,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png,electric
+Mountains & Caves,Physical & Head-on,Speed & Evasion,Bold & Competitive,Magby,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png,fire
+Cities & Plains,Quick & Agile,Resilience,Calm & Loyal,Miltank,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png,normal
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Blissey,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png,normal
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Raikou,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png,electric
+Mountains & Caves,Quick & Agile,Resilience,Bold & Competitive,Entei,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png,fire
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Suicune,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png,water
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Larvitar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Pupitar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Tyranitar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png,rock
+Mysterious Places,Quick & Agile,Resilience,Mysterious & Cunning,Lugia,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png,psychic
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Ho-oh,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png,fire
+Mysterious Places,Quick & Agile,Resilience,Mysterious & Cunning,Celebi,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png,psychic
+Forests & Jungles,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Treecko,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png,grass
+Forests & Jungles,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Grovyle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/253.png,grass
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Sceptile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png,grass
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Torchic,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png,fire
+Mountains & Caves,Balanced & Versatile,Raw Power,Bold & Competitive,Combusken,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/256.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Blaziken,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png,fire
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Mudkip,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Marshtomp,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/259.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Swampert,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png,water
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Poochyena,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/261.png,dark
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Mightyena,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/262.png,dark
+Cities & Plains,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Zigzagoon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Linoone,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/264.png,normal
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Wurmple,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/265.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Silcoon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/266.png,bug
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Beautifly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/267.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Cascoon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/268.png,bug
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Dustox,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/269.png,bug
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Lotad,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Lombre,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/271.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Ludicolo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png,water
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Seedot,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/273.png,grass
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Nuzleaf,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/274.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Shiftry,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/275.png,grass
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Taillow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/276.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Swellow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/277.png,normal
+Oceans & Lakes,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Wingull,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Pelipper,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png,water
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Ralts,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Kirlia,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/281.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Gardevoir,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png,psychic
+Forests & Jungles,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Surskit,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/283.png,bug
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Masquerain,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/284.png,bug
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Shroomish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/285.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Breloom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/286.png,grass
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Slakoth,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/287.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Vigoroth,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/288.png,normal
+Cities & Plains,Quick & Agile,Raw Power,Adaptable & Friendly,Slaking,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/289.png,normal
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Nincada,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/290.png,bug
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Ninjask,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/291.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Shedinja,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/292.png,bug
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Whismur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/293.png,normal
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Loudred,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/294.png,normal
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Exploud,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/295.png,normal
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Makuhita,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/296.png,fighting
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Hariyama,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png,fighting
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Azurill,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/298.png,normal
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Nosepass,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png,rock
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Skitty,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Delcatty,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/301.png,normal
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Sableye,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png,dark
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Mawile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png,steel
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Aron,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png,steel
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Lairon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/305.png,steel
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Aggron,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png,steel
+Mountains & Caves,Balanced & Versatile,Speed & Evasion,Bold & Competitive,Meditite,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/307.png,fighting
+Mountains & Caves,Balanced & Versatile,Speed & Evasion,Bold & Competitive,Medicham,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png,fighting
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Electrike,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/309.png,electric
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Manectric,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/310.png,electric
+Cities & Plains,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Plusle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/311.png,electric
+Cities & Plains,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Minun,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/312.png,electric
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Volbeat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/313.png,bug
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Illumise,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png,bug
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Roselia,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png,grass
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Gulpin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/316.png,poison
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Swalot,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/317.png,poison
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Carvanha,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/318.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Sharpedo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/319.png,water
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Wailmer,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/320.png,water
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Wailord,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png,water
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Numel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/322.png,fire
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Camerupt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/323.png,fire
+Mountains & Caves,Balanced & Versatile,Resilience,Bold & Competitive,Torkoal,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png,fire
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Spoink,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/325.png,psychic
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Grumpig,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png,psychic
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Spinda,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png,normal
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Trapinch,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Vibrava,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/329.png,ground
+Mountains & Caves,Quick & Agile,Raw Power,Adaptable & Friendly,Flygon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png,ground
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Cacnea,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png,grass
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Cacturne,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/332.png,grass
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Swablu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png,normal
+Mysterious Places,Balanced & Versatile,Resilience,Bold & Competitive,Altaria,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png,dragon
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Zangoose,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/335.png,normal
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Seviper,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/336.png,poison
+Mountains & Caves,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Lunatone,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/337.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Solrock,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/338.png,rock
+Oceans & Lakes,Physical & Head-on,Speed & Evasion,Bold & Competitive,Barboach,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/339.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Whiscash,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/340.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Corphish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/341.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Crawdaunt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/342.png,water
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Baltoy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/343.png,ground
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Claydol,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/344.png,ground
+Mountains & Caves,Strategic & Long-Range,Resilience,Mysterious & Cunning,Lileep,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/345.png,rock
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Cradily,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/346.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Anorith,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/347.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Armaldo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/348.png,rock
+Oceans & Lakes,Physical & Head-on,Speed & Evasion,Bold & Competitive,Feebas,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/349.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Milotic,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png,water
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Castform,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png,normal
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Kecleon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/352.png,normal
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Shuppet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/353.png,ghost
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Banette,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png,ghost
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Duskull,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/355.png,ghost
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Dusclops,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png,ghost
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Tropius,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/357.png,grass
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Chimecho,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/358.png,psychic
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Absol,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png,dark
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Wynaut,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/360.png,psychic
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Snorunt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png,ice
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Glalie,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png,ice
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Spheal,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/363.png,ice
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Sealeo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/364.png,ice
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Walrein,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/365.png,ice
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Clamperl,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/366.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Huntail,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/367.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Gorebyss,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/368.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Relicanth,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Luvdisc,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/370.png,water
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Bagon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png,dragon
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Shelgon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/372.png,dragon
+Mysterious Places,Quick & Agile,Raw Power,Bold & Competitive,Salamence,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png,dragon
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Beldum,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/374.png,steel
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Metang,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/375.png,steel
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Metagross,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png,steel
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Regirock,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png,rock
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Regice,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png,ice
+Cities & Plains,Balanced & Versatile,Resilience,Adaptable & Friendly,Registeel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png,steel
+Mysterious Places,Quick & Agile,Resilience,Bold & Competitive,Latias,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png,dragon
+Mysterious Places,Quick & Agile,Raw Power,Bold & Competitive,Latios,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png,dragon
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Kyogre,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png,water
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Groudon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png,ground
+Mysterious Places,Balanced & Versatile,Raw Power,Bold & Competitive,Rayquaza,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png,dragon
+Cities & Plains,Quick & Agile,Resilience,Adaptable & Friendly,Jirachi,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png,steel
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Deoxys-normal,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png,psychic
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Turtwig,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Grotle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Torterra,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png,grass
+Mountains & Caves,Balanced & Versatile,Speed & Evasion,Bold & Competitive,Chimchar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png,fire
+Mountains & Caves,Balanced & Versatile,Speed & Evasion,Bold & Competitive,Monferno,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png,fire
+Mountains & Caves,Quick & Agile,Speed & Evasion,Bold & Competitive,Infernape,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png,fire
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Piplup,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Prinplup,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Empoleon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png,water
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Starly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Staravia,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png,normal
+Cities & Plains,Quick & Agile,Raw Power,Adaptable & Friendly,Staraptor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png,normal
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Bidoof,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Bibarel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png,normal
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Kricketot,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Kricketune,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png,bug
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Shinx,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png,electric
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Luxio,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png,electric
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Luxray,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png,electric
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Budew,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Roserade,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png,grass
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Cranidos,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Rampardos,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png,rock
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Shieldon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png,rock
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Bastiodon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png,rock
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Burmy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png,bug
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Wormadam-plant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png,bug
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Mothim,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png,bug
+Forests & Jungles,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Combee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png,bug
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Vespiquen,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png,bug
+Cities & Plains,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Pachirisu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png,electric
+Oceans & Lakes,Physical & Head-on,Speed & Evasion,Bold & Competitive,Buizel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Floatzel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png,water
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Cherubi,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Cherrim,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png,grass
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Shellos,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Gastrodon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png,water
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Ambipom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png,normal
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Drifloon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png,ghost
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Drifblim,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png,ghost
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Buneary,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Lopunny,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png,normal
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Mismagius,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png,ghost
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Honchkrow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png,dark
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Glameow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Purugly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png,normal
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Chingling,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png,psychic
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Stunky,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png,poison
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Skuntank,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png,poison
+Cities & Plains,Balanced & Versatile,Resilience,Adaptable & Friendly,Bronzor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png,steel
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Bronzong,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png,steel
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Bonsly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png,rock
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Mime-jr,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png,psychic
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Happiny,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png,normal
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Chatot,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png,normal
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Spiritomb,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png,ghost
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Gible,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png,dragon
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Gabite,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png,dragon
+Mysterious Places,Quick & Agile,Raw Power,Bold & Competitive,Garchomp,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png,dragon
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Munchlax,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png,normal
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Riolu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png,fighting
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Lucario,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png,fighting
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Hippopotas,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png,ground
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Hippowdon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png,ground
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Skorupi,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png,poison
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Drapion,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png,poison
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Croagunk,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Toxicroak,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Carnivine,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png,grass
+Oceans & Lakes,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Finneon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png,water
+Oceans & Lakes,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Lumineon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Mantyke,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png,water
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Snover,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png,grass
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Abomasnow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png,grass
+Mysterious Places,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Weavile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png,dark
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Magnezone,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png,electric
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Lickilicky,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png,normal
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Rhyperior,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png,ground
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Tangrowth,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png,grass
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Electivire,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png,electric
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Magmortar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png,fire
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Togekiss,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png,fairy
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Yanmega,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Leafeon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png,grass
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Glaceon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png,ice
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Gliscor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png,ground
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Mamoswine,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png,ice
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Porygon-z,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png,normal
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Gallade,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png,psychic
+Mountains & Caves,Strategic & Long-Range,Resilience,Mysterious & Cunning,Probopass,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png,rock
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Dusknoir,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png,ghost
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Froslass,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png,ice
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Rotom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png,electric
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Uxie,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png,psychic
+Mysterious Places,Balanced & Versatile,Raw Power,Mysterious & Cunning,Mesprit,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png,psychic
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Azelf,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png,psychic
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Dialga,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png,steel
+Oceans & Lakes,Quick & Agile,Raw Power,Adaptable & Friendly,Palkia,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png,water
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Heatran,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png,fire
+Cities & Plains,Quick & Agile,Raw Power,Adaptable & Friendly,Regigigas,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png,normal
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Giratina-altered,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png,ghost
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Cresselia,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png,psychic
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Phione,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png,water
+Oceans & Lakes,Quick & Agile,Resilience,Adaptable & Friendly,Manaphy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png,water
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Darkrai,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png,dark
+Forests & Jungles,Quick & Agile,Resilience,Calm & Loyal,Shaymin-land,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png,grass
+Cities & Plains,Quick & Agile,Resilience,Calm & Loyal,Arceus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png,normal
+Mysterious Places,Quick & Agile,Resilience,Mysterious & Cunning,Victini,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/494.png,psychic
+Forests & Jungles,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Snivy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png,grass
+Forests & Jungles,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Servine,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png,grass
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Serperior,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png,grass
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Tepig,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Pignite,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/499.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Emboar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png,fire
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Oshawott,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Dewott,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/502.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Samurott,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/503.png,water
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Patrat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/504.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Watchog,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/505.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Lillipup,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Herdier,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/507.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Stoutland,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/508.png,normal
+Mysterious Places,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Purrloin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/509.png,dark
+Mysterious Places,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Liepard,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png,dark
+Forests & Jungles,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Pansage,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/511.png,grass
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Simisage,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/512.png,grass
+Mountains & Caves,Balanced & Versatile,Speed & Evasion,Bold & Competitive,Pansear,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/513.png,fire
+Mountains & Caves,Quick & Agile,Speed & Evasion,Bold & Competitive,Simisear,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/514.png,fire
+Oceans & Lakes,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Panpour,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/515.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Simipour,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/516.png,water
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Munna,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/517.png,psychic
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Musharna,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/518.png,psychic
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Pidove,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Tranquill,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/520.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Unfezant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Blitzle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/522.png,electric
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Zebstrika,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png,electric
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Roggenrola,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/524.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Boldore,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Gigalith,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/526.png,rock
+Mysterious Places,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Woobat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/527.png,psychic
+Mysterious Places,Quick & Agile,Speed & Evasion,Mysterious & Cunning,Swoobat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/528.png,psychic
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Drilbur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/529.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Excadrill,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png,ground
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Audino,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/531.png,normal
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Timburr,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/532.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Gurdurr,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/533.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Conkeldurr,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png,fighting
+Oceans & Lakes,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Tympole,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/535.png,water
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Palpitoad,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/536.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Seismitoad,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png,water
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Throh,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/538.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Sawk,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/539.png,fighting
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Sewaddle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/540.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Swadloon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/541.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Leavanny,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/542.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Venipede,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/543.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Whirlipede,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/544.png,bug
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Scolipede,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/545.png,bug
+Forests & Jungles,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Cottonee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png,grass
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Whimsicott,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/547.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Petilil,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Lilligant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png,grass
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Basculin-red-striped,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png,water
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Sandile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/551.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Krokorok,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Krookodile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Darumaka,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/554.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Darmanitan-standard,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png,fire
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Maractus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png,grass
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Dwebble,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/557.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Crustle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/558.png,bug
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Scraggy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png,dark
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Scrafty,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png,dark
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Sigilyph,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png,psychic
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Yamask,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/562.png,ghost
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Cofagrigus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/563.png,ghost
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Tirtouga,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/564.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Carracosta,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/565.png,water
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Archen,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/566.png,rock
+Mountains & Caves,Quick & Agile,Raw Power,Adaptable & Friendly,Archeops,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/567.png,rock
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Trubbish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/568.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Garbodor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/569.png,poison
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Zorua,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png,dark
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Zoroark,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png,dark
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Minccino,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/572.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Cinccino,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png,normal
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Gothita,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/574.png,psychic
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Gothorita,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png,psychic
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Gothitelle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Solosis,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Duosion,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/578.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Reuniclus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png,psychic
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Ducklett,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Swanna,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/581.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Vanillite,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/582.png,ice
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Vanillish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/583.png,ice
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Vanilluxe,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png,ice
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Deerling,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Sawsbuck,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Emolga,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/587.png,electric
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Karrablast,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/588.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Escavalier,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/589.png,bug
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Foongus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/590.png,grass
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Amoonguss,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/591.png,grass
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Frillish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png,water
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Jellicent,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Alomomola,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png,water
+Forests & Jungles,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Joltik,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/595.png,bug
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Galvantula,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Ferroseed,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/597.png,grass
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Ferrothorn,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/598.png,grass
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Klink,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/599.png,steel
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Klang,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/600.png,steel
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Klinklang,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/601.png,steel
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Tynamo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/602.png,electric
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Eelektrik,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/603.png,electric
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Eelektross,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/604.png,electric
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Elgyem,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/605.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Beheeyem,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/606.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Litwick,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/607.png,ghost
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Lampent,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/608.png,ghost
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Chandelure,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png,ghost
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Axew,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png,dragon
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Fraxure,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/611.png,dragon
+Mysterious Places,Quick & Agile,Raw Power,Bold & Competitive,Haxorus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png,dragon
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Cubchoo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/613.png,ice
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Beartic,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/614.png,ice
+Oceans & Lakes,Quick & Agile,Resilience,Adaptable & Friendly,Cryogonal,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png,ice
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Shelmet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/616.png,bug
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Accelgor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/617.png,bug
+Mountains & Caves,Strategic & Long-Range,Resilience,Mysterious & Cunning,Stunfisk,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/618.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Mienfoo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png,fighting
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Mienshao,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png,fighting
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Druddigon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/621.png,dragon
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Golett,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/622.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Golurk,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png,ground
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Pawniard,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png,dark
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Bisharp,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png,dark
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Bouffalant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/626.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Rufflet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Braviary,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png,normal
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Vullaby,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/629.png,dark
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Mandibuzz,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png,dark
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Heatmor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png,fire
+Forests & Jungles,Quick & Agile,Resilience,Adaptable & Friendly,Durant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/632.png,bug
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Deino,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/633.png,dark
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Zweilous,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/634.png,dark
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Hydreigon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png,dark
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Larvesta,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/636.png,bug
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Volcarona,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png,bug
+Cities & Plains,Quick & Agile,Resilience,Adaptable & Friendly,Cobalion,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png,steel
+Mountains & Caves,Quick & Agile,Raw Power,Adaptable & Friendly,Terrakion,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png,rock
+Forests & Jungles,Quick & Agile,Resilience,Calm & Loyal,Virizion,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png,grass
+Anywhere,Quick & Agile,Raw Power,Energetic & Free-Spirited,Tornadus-incarnate,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png,flying
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Thundurus-incarnate,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png,electric
+Mysterious Places,Strategic & Long-Range,Raw Power,Bold & Competitive,Reshiram,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png,dragon
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Zekrom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png,dragon
+Mountains & Caves,Quick & Agile,Raw Power,Adaptable & Friendly,Landorus-incarnate,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png,ground
+Mysterious Places,Balanced & Versatile,Raw Power,Bold & Competitive,Kyurem,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png,dragon
+Oceans & Lakes,Quick & Agile,Raw Power,Adaptable & Friendly,Keldeo-ordinary,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png,water
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Meloetta-aria,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png,normal
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Genesect,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Chespin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png,grass
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Quilladin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png,grass
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Chesnaught,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png,grass
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Fennekin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png,fire
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Braixen,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png,fire
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Delphox,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png,fire
+Oceans & Lakes,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Froakie,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Frogadier,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Greninja,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png,water
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Bunnelby,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/659.png,normal
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Diggersby,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/660.png,normal
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Fletchling,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/661.png,normal
+Mountains & Caves,Physical & Head-on,Speed & Evasion,Bold & Competitive,Fletchinder,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/662.png,fire
+Mountains & Caves,Quick & Agile,Speed & Evasion,Bold & Competitive,Talonflame,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png,fire
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Scatterbug,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/664.png,bug
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Spewpa,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/665.png,bug
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Vivillon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png,bug
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Litleo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/667.png,fire
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Pyroar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png,fire
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Flabebe,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png,fairy
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Floette,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png,fairy
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Florges,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png,fairy
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Skiddo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/672.png,grass
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Gogoat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/673.png,grass
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Pancham,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/674.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Pangoro,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png,fighting
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Furfrou,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png,normal
+Mysterious Places,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Espurr,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/677.png,psychic
+Mysterious Places,Quick & Agile,Speed & Evasion,Mysterious & Cunning,Meowstic-male,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png,psychic
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Honedge,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/679.png,steel
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Doublade,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png,steel
+Cities & Plains,Balanced & Versatile,Resilience,Adaptable & Friendly,Aegislash-shield,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png,steel
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Spritzee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/682.png,fairy
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Aromatisse,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/683.png,fairy
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Swirlix,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/684.png,fairy
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Slurpuff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/685.png,fairy
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Inkay,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png,dark
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Malamar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png,dark
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Binacle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/688.png,rock
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Barbaracle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/689.png,rock
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Skrelp,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/690.png,poison
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Dragalge,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png,poison
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Clauncher,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/692.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Clawitzer,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/693.png,water
+Cities & Plains,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Helioptile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/694.png,electric
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Heliolisk,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/695.png,electric
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Tyrunt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/696.png,rock
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Tyrantrum,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/697.png,rock
+Mountains & Caves,Strategic & Long-Range,Resilience,Mysterious & Cunning,Amaura,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/698.png,rock
+Mountains & Caves,Strategic & Long-Range,Resilience,Mysterious & Cunning,Aurorus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/699.png,rock
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Sylveon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png,fairy
+Mountains & Caves,Quick & Agile,Speed & Evasion,Bold & Competitive,Hawlucha,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png,fighting
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Dedenne,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png,electric
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Carbink,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/703.png,rock
+Mysterious Places,Strategic & Long-Range,Resilience,Bold & Competitive,Goomy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/704.png,dragon
+Mysterious Places,Strategic & Long-Range,Resilience,Bold & Competitive,Sliggoo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/705.png,dragon
+Mysterious Places,Strategic & Long-Range,Resilience,Bold & Competitive,Goodra,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png,dragon
+Cities & Plains,Balanced & Versatile,Resilience,Adaptable & Friendly,Klefki,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png,steel
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Phantump,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/708.png,ghost
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Trevenant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/709.png,ghost
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Pumpkaboo-average,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png,ghost
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Gourgeist-average,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png,ghost
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Bergmite,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/712.png,ice
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Avalugg,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/713.png,ice
+Anywhere,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Noibat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png,flying
+Anywhere,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Noivern,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png,flying
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Xerneas,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png,fairy
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Yveltal,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png,dark
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Zygarde-50,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png,dragon
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Diancie,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png,rock
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Hoopa,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png,psychic
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Volcanion,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png,fire
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Rowlet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png,grass
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Dartrix,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Decidueye,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png,grass
+Mountains & Caves,Physical & Head-on,Speed & Evasion,Bold & Competitive,Litten,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png,fire
+Mountains & Caves,Physical & Head-on,Speed & Evasion,Bold & Competitive,Torracat,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Incineroar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png,fire
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Popplio,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Brionne,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Primarina,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png,water
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Pikipek,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Trumbeak,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Toucannon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Yungoos,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Gumshoos,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png,normal
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Grubbin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Charjabug,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png,bug
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Vikavolt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png,bug
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Crabrawler,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Crabominable,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png,fighting
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Oricorio-baile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png,fire
+Forests & Jungles,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Cutiefly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/742.png,bug
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Ribombee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png,bug
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Rockruff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png,rock
+Mountains & Caves,Quick & Agile,Raw Power,Adaptable & Friendly,Lycanroc-midday,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png,rock
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Wishiwashi-solo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png,water
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Mareanie,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png,poison
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Toxapex,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png,poison
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Mudbray,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png,ground
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Mudsdale,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png,ground
+Oceans & Lakes,Balanced & Versatile,Resilience,Adaptable & Friendly,Dewpider,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Araquanid,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png,water
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Fomantis,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Lurantis,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png,grass
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Morelull,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/755.png,grass
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Shiinotic,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png,grass
+Forests & Jungles,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Salandit,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png,poison
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Salazzle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png,poison
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Stufful,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png,normal
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Bewear,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/760.png,normal
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Bounsweet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/761.png,grass
+Forests & Jungles,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Steenee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Tsareena,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png,grass
+Mysterious Places,Quick & Agile,Resilience,Calm & Loyal,Comfey,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png,fairy
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Oranguru,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png,normal
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Passimian,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png,fighting
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Wimpod,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Golisopod,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png,bug
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Sandygast,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/769.png,ghost
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Palossand,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/770.png,ghost
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Pyukumuku,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/771.png,water
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Type-null,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/772.png,normal
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Silvally,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png,normal
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Minior-red-meteor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png,rock
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Komala,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png,normal
+Mountains & Caves,Strategic & Long-Range,Resilience,Bold & Competitive,Turtonator,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png,fire
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Togedemaru,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png,electric
+Mysterious Places,Quick & Agile,Resilience,Mysterious & Cunning,Mimikyu-disguised,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png,ghost
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Bruxish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png,water
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Drampa,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/780.png,normal
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Dhelmise,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/781.png,ghost
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Jangmo-o,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/782.png,dragon
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Hakamo-o,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/783.png,dragon
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Kommo-o,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png,dragon
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Tapu-koko,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png,electric
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Tapu-lele,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png,psychic
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Tapu-bulu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png,grass
+Oceans & Lakes,Strategic & Long-Range,Resilience,Mysterious & Cunning,Tapu-fini,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png,water
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Cosmog,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png,psychic
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Cosmoem,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png,psychic
+Mysterious Places,Quick & Agile,Resilience,Mysterious & Cunning,Solgaleo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png,psychic
+Mysterious Places,Quick & Agile,Resilience,Mysterious & Cunning,Lunala,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png,psychic
+Mountains & Caves,Quick & Agile,Resilience,Adaptable & Friendly,Nihilego,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/793.png,rock
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Buzzwole,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/794.png,bug
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Pheromosa,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/795.png,bug
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Xurkitree,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/796.png,electric
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Celesteela,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/797.png,steel
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Kartana,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png,grass
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Guzzlord,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/799.png,dark
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Necrozma,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png,psychic
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Magearna,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png,steel
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Marshadow,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png,fighting
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Poipole,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/803.png,poison
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Naganadel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/804.png,poison
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Stakataka,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/805.png,rock
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Blacephalon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/806.png,fire
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Zeraora,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png,electric
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Meltan,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/808.png,steel
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Melmetal,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/809.png,steel
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Grookey,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Thwackey,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/811.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Rillaboom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png,grass
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Scorbunny,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png,fire
+Mountains & Caves,Physical & Head-on,Speed & Evasion,Bold & Competitive,Raboot,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png,fire
+Mountains & Caves,Quick & Agile,Speed & Evasion,Bold & Competitive,Cinderace,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png,fire
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Sobble,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png,water
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Drizzile,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/817.png,water
+Oceans & Lakes,Quick & Agile,Raw Power,Adaptable & Friendly,Inteleon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png,water
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Skwovet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/819.png,normal
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Greedent,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/820.png,normal
+Anywhere,Physical & Head-on,Speed & Evasion,Bold & Competitive,Rookidee,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/821.png,flying
+Anywhere,Physical & Head-on,Speed & Evasion,Bold & Competitive,Corvisquire,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/822.png,flying
+Anywhere,Physical & Head-on,Resilience,Bold & Competitive,Corviknight,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/823.png,flying
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Blipbug,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/824.png,bug
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Dottler,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/825.png,bug
+Forests & Jungles,Strategic & Long-Range,Resilience,Mysterious & Cunning,Orbeetle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/826.png,bug
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Nickit,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/827.png,dark
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Thievul,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/828.png,dark
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Gossifleur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/829.png,grass
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Eldegoss,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/830.png,grass
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Wooloo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png,normal
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Dubwool,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png,normal
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Chewtle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/833.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Drednaw,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png,water
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Yamper,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/835.png,electric
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Boltund,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/836.png,electric
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Rolycoly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/837.png,rock
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Carkol,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/838.png,rock
+Mountains & Caves,Balanced & Versatile,Resilience,Adaptable & Friendly,Coalossal,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png,rock
+Forests & Jungles,Balanced & Versatile,Resilience,Calm & Loyal,Applin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Flapple,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png,grass
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Appletun,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png,grass
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Silicobra,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/843.png,ground
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Sandaconda,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/844.png,ground
+Anywhere,Balanced & Versatile,Resilience,Energetic & Free-Spirited,Cramorant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png,flying
+Oceans & Lakes,Physical & Head-on,Speed & Evasion,Bold & Competitive,Arrokuda,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/846.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Barraskewda,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png,water
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Toxel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/848.png,electric
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Toxtricity-amped,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png,electric
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Sizzlipede,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/850.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Centiskorch,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/851.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Clobbopus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/852.png,fighting
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Grapploct,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png,fighting
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Sinistea,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png,ghost
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Polteageist,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png,ghost
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Hatenna,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/856.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Hattrem,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/857.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Hatterene,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png,psychic
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Impidimp,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/859.png,dark
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Morgrem,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/860.png,dark
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Grimmsnarl,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png,dark
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Obstagoon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/862.png,dark
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Perrserker,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/863.png,steel
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Cursola,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png,ghost
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Sirfetchd,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png,fighting
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Mr-rime,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/866.png,ice
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Runerigus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/867.png,ground
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Milcery,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/868.png,fairy
+Mysterious Places,Strategic & Long-Range,Resilience,Calm & Loyal,Alcremie,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png,fairy
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Falinks,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/870.png,fighting
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Pincurchin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/871.png,electric
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Snom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/872.png,ice
+Oceans & Lakes,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Frosmoth,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/873.png,ice
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Stonjourner,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png,rock
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Eiscue-ice,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png,ice
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Indeedee-male,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png,psychic
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Morpeko-full-belly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png,electric
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Cufant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/878.png,steel
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Copperajah,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/879.png,steel
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Dracozolt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/880.png,electric
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Arctozolt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/881.png,electric
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Dracovish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/882.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Arctovish,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/883.png,water
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Duraludon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png,steel
+Mysterious Places,Physical & Head-on,Speed & Evasion,Bold & Competitive,Dreepy,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/885.png,dragon
+Mysterious Places,Quick & Agile,Speed & Evasion,Bold & Competitive,Drakloak,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/886.png,dragon
+Mysterious Places,Quick & Agile,Speed & Evasion,Bold & Competitive,Dragapult,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png,dragon
+Mysterious Places,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Zacian,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png,fairy
+Mountains & Caves,Quick & Agile,Speed & Evasion,Bold & Competitive,Zamazenta,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png,fighting
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Eternatus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png,poison
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Kubfu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png,fighting
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Urshifu-single-strike,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png,fighting
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Zarude,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/893.png,dark
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Regieleki,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png,electric
+Mysterious Places,Balanced & Versatile,Resilience,Bold & Competitive,Regidrago,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png,dragon
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Glastrier,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png,ice
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Spectrier,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png,ghost
+Mysterious Places,Balanced & Versatile,Resilience,Mysterious & Cunning,Calyrex,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png,psychic
+Cities & Plains,Balanced & Versatile,Raw Power,Adaptable & Friendly,Wyrdeer,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/899.png,normal
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Kleavor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/900.png,bug
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Ursaluna,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png,ground
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Basculegion-male,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png,water
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Sneasler,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/903.png,fighting
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Overqwil,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/904.png,dark
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Enamorus-incarnate,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png,fairy
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Sprigatito,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png,grass
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Floragato,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/907.png,grass
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Meowscarada,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png,grass
+Mountains & Caves,Strategic & Long-Range,Resilience,Bold & Competitive,Fuecoco,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png,fire
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Crocalor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/910.png,fire
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Skeledirge,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png,fire
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Quaxly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Quaxwell,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/913.png,water
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Quaquaval,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png,water
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Lechonk,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/915.png,normal
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Oinkologne-male,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png,normal
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Tarountula,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/917.png,bug
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Spidops,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/918.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Nymble,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/919.png,bug
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Lokix,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png,bug
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Pawmi,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/921.png,electric
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Pawmo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/922.png,electric
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Pawmot,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png,electric
+Cities & Plains,Physical & Head-on,Speed & Evasion,Bold & Competitive,Tandemaus,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png,normal
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Maushold-family-of-four,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png,normal
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Fidough,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/926.png,fairy
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Dachsbun,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png,fairy
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Smoliv,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Dolliv,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/929.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Arboliva,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png,grass
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Squawkabilly-green-plumage,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png,normal
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Nacli,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/932.png,rock
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Naclstack,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/933.png,rock
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Garganacl,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png,rock
+Mountains & Caves,Balanced & Versatile,Raw Power,Bold & Competitive,Charcadet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/935.png,fire
+Mountains & Caves,Strategic & Long-Range,Raw Power,Bold & Competitive,Armarouge,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Ceruledge,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png,fire
+Cities & Plains,Strategic & Long-Range,Resilience,Mysterious & Cunning,Tadbulb,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/938.png,electric
+Cities & Plains,Strategic & Long-Range,Resilience,Mysterious & Cunning,Bellibolt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/939.png,electric
+Cities & Plains,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Wattrel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/940.png,electric
+Cities & Plains,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Kilowattrel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png,electric
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Maschiff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png,dark
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Mabosstiff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png,dark
+Forests & Jungles,Physical & Head-on,Speed & Evasion,Bold & Competitive,Shroodle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/944.png,poison
+Forests & Jungles,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Grafaiai,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png,poison
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Bramblin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Brambleghast,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png,grass
+Mountains & Caves,Strategic & Long-Range,Resilience,Mysterious & Cunning,Toedscool,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/948.png,ground
+Mountains & Caves,Quick & Agile,Resilience,Adaptable & Friendly,Toedscruel,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/949.png,ground
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Klawf,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png,rock
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Capsakid,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/951.png,grass
+Forests & Jungles,Balanced & Versatile,Raw Power,Adaptable & Friendly,Scovillain,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png,grass
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Rellor,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png,bug
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Rabsca,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png,bug
+Mysterious Places,Strategic & Long-Range,Speed & Evasion,Mysterious & Cunning,Flittle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/955.png,psychic
+Mysterious Places,Quick & Agile,Speed & Evasion,Mysterious & Cunning,Espathra,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png,psychic
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Tinkatink,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png,fairy
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Tinkatuff,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/958.png,fairy
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Tinkaton,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png,fairy
+Oceans & Lakes,Physical & Head-on,Speed & Evasion,Bold & Competitive,Wiglett,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/960.png,water
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Wugtrio,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/961.png,water
+Anywhere,Physical & Head-on,Raw Power,Bold & Competitive,Bombirdier,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png,flying
+Oceans & Lakes,Balanced & Versatile,Speed & Evasion,Energetic & Free-Spirited,Finizen,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/963.png,water
+Oceans & Lakes,Quick & Agile,Resilience,Adaptable & Friendly,Palafin-zero,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png,water
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Varoom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/965.png,steel
+Cities & Plains,Physical & Head-on,Raw Power,Bold & Competitive,Revavroom,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/966.png,steel
+Mysterious Places,Quick & Agile,Speed & Evasion,Bold & Competitive,Cyclizar,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/967.png,dragon
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Orthworm,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png,steel
+Mountains & Caves,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Glimmet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/969.png,rock
+Mountains & Caves,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Glimmora,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/970.png,rock
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Greavard,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png,ghost
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Houndstone,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png,ghost
+Anywhere,Physical & Head-on,Raw Power,Bold & Competitive,Flamigo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png,flying
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Cetoddle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png,ice
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Cetitan,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/975.png,ice
+Oceans & Lakes,Physical & Head-on,Raw Power,Bold & Competitive,Veluza,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/976.png,water
+Oceans & Lakes,Physical & Head-on,Resilience,Bold & Competitive,Dondozo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/977.png,water
+Mysterious Places,Strategic & Long-Range,Raw Power,Bold & Competitive,Tatsugiri-curly,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png,dragon
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Annihilape,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/979.png,fighting
+Forests & Jungles,Physical & Head-on,Resilience,Bold & Competitive,Clodsire,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png,poison
+Cities & Plains,Strategic & Long-Range,Resilience,Calm & Loyal,Farigiraf,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png,normal
+Cities & Plains,Physical & Head-on,Resilience,Bold & Competitive,Dudunsparce-two-segment,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png,normal
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Kingambit,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/983.png,dark
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Great-tusk,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/984.png,ground
+Mysterious Places,Quick & Agile,Resilience,Calm & Loyal,Scream-tail,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/985.png,fairy
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Brute-bonnet,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/986.png,grass
+Mysterious Places,Quick & Agile,Raw Power,Mysterious & Cunning,Flutter-mane,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/987.png,ghost
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Slither-wing,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/988.png,bug
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Sandy-shocks,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png,electric
+Mountains & Caves,Quick & Agile,Resilience,Adaptable & Friendly,Iron-treads,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png,ground
+Oceans & Lakes,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Iron-bundle,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png,ice
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Iron-hands,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/992.png,fighting
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Iron-jugulis,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png,dark
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Iron-moth,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png,fire
+Mountains & Caves,Physical & Head-on,Raw Power,Bold & Competitive,Iron-thorns,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/995.png,rock
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Frigibax,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png,dragon
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Arctibax,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/997.png,dragon
+Mysterious Places,Physical & Head-on,Raw Power,Bold & Competitive,Baxcalibur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png,dragon
+Mysterious Places,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Gimmighoul,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png,ghost
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Gholdengo,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png,steel
+Mysterious Places,Strategic & Long-Range,Resilience,Mysterious & Cunning,Wo-chien,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png,dark
+Mysterious Places,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Chien-pao,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png,dark
+Mysterious Places,Physical & Head-on,Resilience,Bold & Competitive,Ting-lu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png,dark
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Chi-yu,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png,dark
+Mysterious Places,Quick & Agile,Raw Power,Bold & Competitive,Roaring-moon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png,dragon
+Mysterious Places,Quick & Agile,Raw Power,Adaptable & Friendly,Iron-valiant,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png,fairy
+Mountains & Caves,Quick & Agile,Raw Power,Bold & Competitive,Koraidon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png,fighting
+Cities & Plains,Quick & Agile,Raw Power,Energetic & Free-Spirited,Miraidon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png,electric
+Oceans & Lakes,Quick & Agile,Raw Power,Adaptable & Friendly,Walking-wake,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1009.png,water
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Iron-leaves,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1010.png,grass
+Forests & Jungles,Strategic & Long-Range,Resilience,Calm & Loyal,Dipplin,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Poltchageist,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png,grass
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Sinistcha,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png,grass
+Forests & Jungles,Physical & Head-on,Raw Power,Bold & Competitive,Okidogi,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png,poison
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Munkidori,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png,poison
+Forests & Jungles,Quick & Agile,Resilience,Adaptable & Friendly,Fezandipiti,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png,poison
+Forests & Jungles,Quick & Agile,Raw Power,Adaptable & Friendly,Ogerpon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png,grass
+Cities & Plains,Strategic & Long-Range,Resilience,Mysterious & Cunning,Archaludon,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1018.png,steel
+Forests & Jungles,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Hydrapple,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png,grass
+Mountains & Caves,Physical & Head-on,Resilience,Bold & Competitive,Gouging-fire,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1020.png,fire
+Cities & Plains,Strategic & Long-Range,Raw Power,Mysterious & Cunning,Raging-bolt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1021.png,electric
+Mountains & Caves,Quick & Agile,Speed & Evasion,Energetic & Free-Spirited,Iron-boulder,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1022.png,rock
+Cities & Plains,Quick & Agile,Raw Power,Adaptable & Friendly,Iron-crown,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1023.png,steel
+Cities & Plains,Balanced & Versatile,Resilience,Calm & Loyal,Terapagos,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1024.png,normal
+Forests & Jungles,Balanced & Versatile,Resilience,Adaptable & Friendly,Pecharunt,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1025.png,poison
