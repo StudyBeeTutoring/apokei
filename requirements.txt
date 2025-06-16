@@ -2,7 +2,6 @@ streamlit
 pandas
 sqlalchemy
 scikit-learn
-lightgbm
 joblib
 streamlit-gsheets
 ./lightgbm-4.6.0-py3-none-manylinux_2_28_x86_64.whl
