@@ -6,8 +6,8 @@ from sklearn.preprocessing import OneHotEncoder
 import os
 import random
 # --- CORRECTED IMPORT ---
-# We no longer need the incorrect import. streamlit_extras will be used with an alias.
-import streamlit_extras as stx 
+from streamlit_extras.stylable_container import stylable_container # A more specific import
+from streamlit_extras.clipboard import button as clipboard_button # The correct clipboard button
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler 2.0", page_icon="🔮", layout="wide")
@@ -147,12 +147,17 @@ with tab1:
             
             # --- SHARE & FEEDBACK ---
             st.write("---")
-            app_url = "https://your-app-url.streamlit.app" # Replace with your actual app URL
+            # IMPORTANT: Replace this with your actual app's URL once deployed!
+            app_url = "https://your-app-url.streamlit.app" 
             share_text = f"My perfect Pokémon partner is {prediction}! 🔮 Find yours at the Poké-Profiler: {app_url}"
             
             # --- CORRECTED SHARE BUTTON ---
-            # This single line creates a button that copies the text to the clipboard when clicked.
-            stx.copy_to_clipboard(share_text, "💌 Share Your Result!")
+            # This is the correct way to implement the clipboard button.
+            clipboard_button(
+                label="💌 Share Your Result!",
+                text=share_text,
+                key="clipboard_button" # A unique key for the button
+            )
 
             st.write("**Is this your perfect partner?** Your feedback helps the Profiler learn!")
             st.session_state.last_input = input_data.to_dict('records')[0]
