@@ -1,5 +1,3 @@
-# poke_profiler_app.py (No changes needed in this file)
-
 import streamlit as st
 import pandas as pd
 from sqlalchemy import text
@@ -7,7 +5,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import OneHotEncoder
 import os
 import random
-from streamlit_extras.keyboard_text import key_to_text # This line will now work
+# --- CORRECTED IMPORT ---
+# We no longer need the incorrect import. streamlit_extras will be used with an alias.
+import streamlit_extras as stx 
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler 2.0", page_icon="🔮", layout="wide")
@@ -136,6 +136,7 @@ with tab1:
                 title = f"{prediction} ✨" if is_shiny else prediction
                 st.markdown(f"## {title}")
                 st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`")
+                
                 st.write("**Base Stats:**")
                 stat_cols = st.columns(3)
                 stat_cols[0].metric("HP", pokemon_info['hp'])
@@ -144,12 +145,14 @@ with tab1:
             
             st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
             
+            # --- SHARE & FEEDBACK ---
             st.write("---")
             app_url = "https://your-app-url.streamlit.app" # Replace with your actual app URL
             share_text = f"My perfect Pokémon partner is {prediction}! 🔮 Find yours at the Poké-Profiler: {app_url}"
-            if st.button("💌 Share Your Result!"):
-                key_to_text(share_text)
-                st.toast("Copied to clipboard!")
+            
+            # --- CORRECTED SHARE BUTTON ---
+            # This single line creates a button that copies the text to the clipboard when clicked.
+            stx.copy_to_clipboard(share_text, "💌 Share Your Result!")
 
             st.write("**Is this your perfect partner?** Your feedback helps the Profiler learn!")
             st.session_state.last_input = input_data.to_dict('records')[0]
