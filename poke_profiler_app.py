@@ -1,48 +1,18 @@
 import streamlit as st
 import pandas as pd
 from sqlalchemy import text
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
+from lightgbm import LGBMClassifier
 import os
 import random
-import json
-import streamlit.components.v1 as components # Import for custom components
+import joblib
 
 # --- PAGE CONFIGURATION ---
-st.set_page_config(page_title="Poké-Profiler 2.0", page_icon="🔮", layout="wide")
+st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="centered")
 
-# --- CUSTOM COMPONENT FOR CLIPBOARD ---
-def create_share_button(text_to_copy):
-    """Creates a custom HTML button that copies text to the clipboard."""
-    # Safely encode the text for JavaScript
-    js_text = json.dumps(text_to_copy)
-
-    # Basic styling to make the button look nice
-    button_style = """
-        background-color: #F0F2F6;
-        color: #31333F;
-        border: 1px solid #D0D0D0;
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        margin-right: 0.5rem;
-    """
-    
-    # The HTML and JavaScript for the component
-    components.html(f"""
-        <button id="clipButton" style="{button_style}">💌 Share Your Result!</button>
-        <script>
-            const btn = document.getElementById("clipButton");
-            btn.onclick = function() {{
-                navigator.clipboard.writeText({js_text});
-                btn.textContent = "✅ Copied!";
-                btn.disabled = true;
-            }}
-        </script>
-    """, height=50)
-
+# --- MODEL AND ENCODER FILENAMES ---
+MODEL_PATH = "trained_pokemon_model.joblib"
 
 # --- DATA LOADING & CACHING ---
 @st.cache_data
@@ -55,7 +25,7 @@ def load_pokemon_data():
         st.stop()
 
 # --- DATABASE SETUP ---
-conn = st.connection("pokemon_db", type="sql", url="sqlite:///poke_profiler_v2.db", ttl=0)
+conn = st.connection("pokemon_db", type="sql", url="sqlite:///poke_profiler_v3.db", ttl=0)
 
 def init_db(initial_df):
     with conn.session as s:
@@ -71,144 +41,145 @@ def init_db(initial_df):
             seed_df.to_sql('pokemon_profiles', conn.engine, if_exists='append', index=False)
         s.commit()
 
-# --- MODEL TRAINING ---
-@st.cache_data(ttl=3600)
-def get_and_train_model():
+# --- UPGRADED MODEL TRAINING & LOADING ---
+def get_or_train_model():
+    """
+    Loads a pre-trained model from disk. If it doesn't exist, it trains a new one,
+    saves it, and then returns it.
+    """
+    # If a trained model already exists, load and return it instantly.
+    if os.path.exists(MODEL_PATH):
+        pipeline = joblib.load(MODEL_PATH)
+        return pipeline
+
+    # --- If no model exists, train a new one ---
+    st.toast("No trained model found. Training a new one from the database...", icon="🧠")
     df = conn.query("SELECT * FROM pokemon_profiles;", ttl=0)
-    if len(df) < 20: return None, None, None
+
+    if len(df) < 20: # Not enough data to train a meaningful model
+        return None
+
     features = ['environment', 'battle_style', 'core_strength', 'personality']
     target = 'pokemon_name'
-    X = df[features]; y = df[target]
-    encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
-    X_encoded = pd.DataFrame(encoder.fit_transform(X))
-    X_encoded.columns = encoder.get_feature_names_out(features)
-    model = RandomForestClassifier(n_estimators=100, random_state=42); model.fit(X_encoded, y)
-    return model, encoder, list(X_encoded.columns)
+    X = df[features]
+    y = df[target]
 
-# --- UI COMPONENTS ---
-def show_hall_of_fame():
-    st.subheader("🏆 Hall of Fame")
-    st.caption("The most frequent partners chosen by trainers worldwide.")
-    profile_df = conn.query("SELECT pokemon_name FROM pokemon_profiles;", ttl=60)
-    if profile_df.empty:
-        st.info("The Hall of Fame is empty. Be the first to contribute!")
-        return
+    # Define the steps in our ML pipeline
+    # Step 1: One-Hot Encode categorical features
+    preprocessor = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
+    # Step 2: Use the LightGBM Classifier model
+    model = LGBMClassifier(n_estimators=100, random_state=42)
+
+    # Create the full pipeline
+    pipeline = Pipeline(steps=[
+        ('preprocessor', preprocessor),
+        ('classifier', model)
+    ])
+
+    # Train the entire pipeline
+    pipeline.fit(X, y)
+
+    # Save the trained pipeline to disk for future use
+    joblib.dump(pipeline, MODEL_PATH)
     
-    top_pokemon = profile_df['pokemon_name'].value_counts().nlargest(5)
-    cols = st.columns(len(top_pokemon))
-    for i, (name, count) in enumerate(top_pokemon.items()):
-        with cols[i]:
-            pokemon_info = POKEMON_INFO.get(name)
-            if pokemon_info:
-                st.image(pokemon_info["img_url"])
-                st.metric(label=name, value=f"{count} Trainers")
-
-def show_training_visualization():
-    st.subheader("🧠 How The Profiler Learns")
-    st.caption("This shows how many times each Pokémon has been confirmed as a partner by users.")
-    profile_df = conn.query("SELECT pokemon_name FROM pokemon_profiles;", ttl=60)
-    if not profile_df.empty:
-        counts = profile_df['pokemon_name'].value_counts()
-        st.bar_chart(counts)
-    else:
-        st.info("No user feedback has been submitted yet.")
+    st.toast("New model trained and saved!", icon="✅")
+    return pipeline
 
 # --- INITIALIZATION ---
 pokemon_data_df = load_pokemon_data()
 init_db(pokemon_data_df)
-model, encoder, trained_columns = get_and_train_model()
+pipeline = get_or_train_model()
 POKEMON_INFO = pokemon_data_df.set_index('pokemon_name').to_dict('index')
 
 # --- MAIN APP LAYOUT ---
-st.title("Poké-Profiler 2.0 🔮")
+st.title("Poké-Profiler 🔮")
 st.markdown("Answer the call of the wild! Describe yourself to discover your true Pokémon partner.")
+st.write("---")
 
-tab1, tab2 = st.tabs(["Profiler Quiz", "Hall of Fame"])
+if pipeline is None:
+    st.warning("The Profiler is still gathering data from trainers. Predictions will be available soon!")
+else:
+    # --- PROFILER QUIZ FORM ---
+    with st.form("profiler_form"):
+        st.subheader("Tell us about yourself...")
+        environment = st.selectbox("Which environment do you feel most at home in?", ('Forests & Jungles', 'Oceans & Lakes', 'Mountains & Caves', 'Cities & Plains', 'Mysterious Places'))
+        personality = st.radio("Which best describes your personality?", ['Bold & Competitive', 'Calm & Loyal', 'Mysterious & Cunning', 'Energetic & Free-Spirited', 'Adaptable & Friendly'])
+        core_strength = st.selectbox("What do you value most in a partner?", ('Raw Power', 'Resilience', 'Speed & Evasion', 'Versatility'))
+        battle_style = st.radio("How do you approach challenges?", ['Physical & Head-on', 'Strategic & Long-Range', 'Quick & Agile', 'Balanced & Versatile'])
+        destiny_checked = st.checkbox("Do you feel a touch of destiny?", help="Checking this may lead to a legendary encounter...")
+        submitted = st.form_submit_button("Discover My Partner!")
 
-with tab1:
-    if model is None:
-        st.warning("The Profiler is still gathering data... Predictions will be available soon!")
-    else:
-        with st.form("profiler_form"):
-            st.subheader("Tell us about yourself...")
-            environment = st.selectbox("Which environment do you feel most at home in?", ('Forests & Jungles', 'Oceans & Lakes', 'Mountains & Caves', 'Cities & Plains', 'Mysterious Places'))
-            personality = st.radio("Which best describes your personality?", ['Bold & Competitive', 'Calm & Loyal', 'Mysterious & Cunning', 'Energetic & Free-Spirited', 'Adaptable & Friendly'])
-            core_strength = st.selectbox("What do you value most in a partner?", ('Raw Power', 'Resilience', 'Speed & Evasion', 'Versatility'))
-            battle_style = st.radio("How do you approach challenges?", ['Physical & Head-on', 'Strategic & Long-Range', 'Quick & Agile', 'Balanced & Versatile'])
-            destiny_checked = st.checkbox("Do you feel a touch of destiny?", help="Checking this may lead to a legendary encounter...")
-            submitted = st.form_submit_button("Discover My Partner!")
+    if submitted:
+        # --- PREDICTION LOGIC (Now much cleaner with a pipeline) ---
+        input_data = pd.DataFrame([[environment, battle_style, core_strength, personality]],
+                                  columns=['environment', 'battle_style', 'core_strength', 'personality'])
+        
+        prediction = pipeline.predict(input_data)[0]
+        prediction_proba = pipeline.predict_proba(input_data)
+        confidence = prediction_proba.max() * 100
 
-        if submitted:
-            input_data = pd.DataFrame([[environment, battle_style, core_strength, personality]], columns=['environment', 'battle_style', 'core_strength', 'personality'])
-            input_encoded = pd.DataFrame(encoder.transform(input_data), columns=encoder.get_feature_names_out(['environment', 'battle_style', 'core_strength', 'personality']))
-            input_processed = input_encoded.reindex(columns=trained_columns, fill_value=0)
-            
-            prediction = model.predict(input_processed)[0]
-            is_legendary_encounter = False
-            
-            if destiny_checked and personality == 'Mysterious & Cunning' and core_strength == 'Raw Power':
-                if random.randint(1, 20) == 1: # 5% chance
-                    legendary_pool = pokemon_data_df[pokemon_data_df['is_legendary'] | pokemon_data_df['is_mythical']]
-                    if not legendary_pool.empty:
-                        prediction = legendary_pool.sample(n=1)['pokemon_name'].iloc[0]
-                        is_legendary_encounter = True
+        is_legendary_encounter = False
+        if destiny_checked and personality == 'Mysterious & Cunning' and core_strength == 'Raw Power':
+            if random.randint(1, 20) == 1: # 5% chance
+                legendary_pool = pokemon_data_df[pokemon_data_df['is_legendary'] | pokemon_data_df['is_mythical']]
+                if not legendary_pool.empty:
+                    prediction = legendary_pool.sample(n=1)['pokemon_name'].iloc[0]
+                    is_legendary_encounter = True
 
-            is_shiny = (random.randint(1, 100) == 1)
-            pokemon_info = POKEMON_INFO.get(prediction)
-            img_to_display = pokemon_info['shiny_img_url'] if is_shiny else pokemon_info['img_url']
-            
-            if is_legendary_encounter: st.success("A legendary force answers your call...", icon="🌟")
-            if is_shiny: st.success("Whoa! A rare Shiny partner appeared!", icon="✨"); st.balloons()
-            
-            st.subheader("Your Pokémon Partner is...")
-            col1, col2 = st.columns([1, 2])
-            with col1:
-                st.image(img_to_display, width=200)
-            with col2:
-                title = f"{prediction} ✨" if is_shiny else prediction
-                st.markdown(f"## {title}")
-                st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`")
-                
-                st.write("**Base Stats:**")
-                stat_cols = st.columns(3)
-                stat_cols[0].metric("HP", pokemon_info['hp'])
-                stat_cols[1].metric("Attack", pokemon_info['attack'])
-                stat_cols[2].metric("Defense", pokemon_info['defense'])
-            
-            st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
-            
-            st.write("---")
-            # IMPORTANT: Replace this with your actual app's URL once deployed!
-            app_url = "https://your-app-url.streamlit.app" 
-            share_text = f"My perfect Pokémon partner is {prediction}! 🔮 Find yours at the Poké-Profiler: {app_url}"
-            
-            # --- CORRECTED SHARE BUTTON ---
-            create_share_button(share_text)
+        is_shiny = (random.randint(1, 100) == 1)
+        pokemon_info = POKEMON_INFO.get(prediction)
+        img_to_display = pokemon_info['shiny_img_url'] if is_shiny else pokemon_info['img_url']
+        
+        # --- DISPLAY PREDICTION ---
+        if is_legendary_encounter: st.success("A legendary force answers your call...", icon="🌟")
+        if is_shiny: st.success("Whoa! A rare Shiny partner appeared!", icon="✨"); st.balloons()
+        
+        st.subheader("Your Pokémon Partner is...")
+        col1, col2 = st.columns([1, 2])
+        with col1:
+            st.image(img_to_display, width=200)
+        with col2:
+            title = f"{prediction} ✨" if is_shiny else prediction
+            st.markdown(f"## {title}")
+            st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`")
+            st.write("**Base Stats:**")
+            stat_cols = st.columns(3)
+            stat_cols[0].metric("HP", pokemon_info['hp'])
+            stat_cols[1].metric("Attack", pokemon_info['attack'])
+            stat_cols[2].metric("Defense", pokemon_info['defense'])
+        
+        st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
+        
+        # --- FEEDBACK LOOP ---
+        st.write("---")
+        st.write("**Is this your perfect partner?** Your feedback helps the Profiler get smarter!")
+        st.session_state.last_input = input_data.to_dict('records')[0]
+        st.session_state.last_prediction = prediction
+        feedback_cols = st.columns(3)
+        if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True): st.session_state.feedback_given = True
+        if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True): st.session_state.feedback_given = True
+        if feedback_cols[2].button("❌ Not quite right", use_container_width=True): st.session_state.feedback_given = True
 
-            st.write("**Is this your perfect partner?** Your feedback helps the Profiler learn!")
-            st.session_state.last_input = input_data.to_dict('records')[0]
-            st.session_state.last_prediction = prediction
-            feedback_cols = st.columns(3)
-            if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True): st.session_state.feedback_given = True
-            if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True): st.session_state.feedback_given = True
-            if feedback_cols[2].button("❌ Not quite right", use_container_width=True): st.session_state.feedback_given = True
-
-with tab2:
-    show_hall_of_fame()
-
-with st.sidebar:
-    st.header("Behind The Scenes")
-    with st.expander("How The Profiler Learns", expanded=False):
-        show_training_visualization()
-
+# --- LOGGING FEEDBACK TO DB ---
 if st.session_state.get('feedback_given', False):
     profile_data = st.session_state.last_input
     profile_data['pokemon_name'] = st.session_state.last_prediction
     with conn.session as s:
-        s.execute(text("INSERT INTO pokemon_profiles (environment, battle_style, core_strength, personality, pokemon_name) VALUES (:environment, :battle_style, :core_strength, :personality, :pokemon_name);"), params=profile_data)
+        s.execute(
+            text("INSERT INTO pokemon_profiles (environment, battle_style, core_strength, personality, pokemon_name) VALUES (:environment, :battle_style, :core_strength, :personality, :pokemon_name);"),
+            params=profile_data
+        )
         s.commit()
-    st.toast("Thank you! Your bond has strengthened the Profiler's knowledge!", icon="✨")
-    st.cache_data.clear()
+    
+    # --- SMARTER RETRAINING TRIGGER ---
+    # Delete the saved model file. It will be retrained on the next page run.
+    if os.path.exists(MODEL_PATH):
+        os.remove(MODEL_PATH)
+    
+    st.toast("Thank you! The Profiler is now learning from your feedback.", icon="✨")
+    
+    # Clean up session state
     del st.session_state.feedback_given
     del st.session_state.last_input
     del st.session_state.last_prediction
+    st.rerun() # Rerun to reflect the new state immediately
