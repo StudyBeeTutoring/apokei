@@ -4,3 +4,4 @@ sqlalchemy
 scikit-learn
 lightgbm
 joblib
+streamlit-gsheets
