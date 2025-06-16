@@ -8,6 +8,7 @@ import random
 import joblib
 import gspread
 from google.oauth2.service_account import Credentials
+import json
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="centered")
@@ -21,20 +22,12 @@ DATA_PATH = "pokemon_data.csv"
 def connect_to_gsheets():
     """Establishes a connection to Google Sheets using gspread and st.secrets."""
     try:
-        # Define the scope of access
-        scopes = [
-            "https://www.googleapis.com/auth/spreadsheets",
-            "https://www.googleapis.com/auth/drive"
-        ]
-        # Get credentials from Streamlit secrets
-        creds = Credentials.from_service_account_info(
-            st.secrets, scopes=scopes
-        )
-        # Authorize and return the gspread client
+        scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
+        creds = Credentials.from_service_account_info(st.secrets, scopes=scopes)
         client = gspread.authorize(creds)
         return client
     except Exception as e:
-        st.error(f"Failed to connect to Google Sheets. Please check your secrets configuration. Details: {e}")
+        st.error(f"Failed to connect to Google Sheets. Check your secrets. Details: {e}")
         st.stop()
 
 def log_feedback_to_sheet(feedback_data):
@@ -43,8 +36,6 @@ def log_feedback_to_sheet(feedback_data):
         client = connect_to_gsheets()
         # IMPORTANT: Replace "PokeProfilerFeedback" with the exact name of your Google Sheet.
         sheet = client.open("PokeProfilerFeedback").sheet1
-        # The columns in your Google Sheet must be:
-        # environment, battle_style, core_strength, personality, pokemon_name
         sheet.append_row(list(feedback_data.values()))
         return True
     except Exception as e:
@@ -57,7 +48,7 @@ def load_model():
     if os.path.exists(MODEL_PATH):
         return joblib.load(MODEL_PATH)
     else:
-        st.error(f"Fatal Error: `{MODEL_PATH}` not found."); st.stop()
+        st.error(f"Fatal Error: `{MODEL_PATH}` not found. Please pre-train and upload the model."); st.stop()
 
 @st.cache_data
 def load_pokemon_data():
