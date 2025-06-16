@@ -31,6 +31,7 @@ def connect_to_gsheets():
 def log_feedback_to_sheet(feedback_data):
     try:
         client = connect_to_gsheets()
+        # IMPORTANT: Replace "PokeProfilerFeedback" with the exact name of your Google Sheet.
         sheet = client.open("PokeProfilerFeedback").sheet1
         sheet.append_row(list(feedback_data.values()))
         return True
@@ -54,13 +55,14 @@ pokemon_data_df = load_pokemon_data()
 POKEMON_INFO = pokemon_data_df.set_index('pokemon_name').to_dict('index')
 
 # --- UI COMPONENTS ---
-def display_prediction(prediction_details):
-    """A dedicated function to display the prediction results."""
+def display_prediction():
+    """A dedicated function to display the prediction results and handle feedback."""
+    prediction_details = st.session_state.prediction_details
     prediction = prediction_details['name']
-    is_legendary_encounter = prediction_details['is_legendary']
+    is_legendary = prediction_details['is_legendary']
     is_shiny = prediction_details['is_shiny']
     
-    if is_legendary_encounter: st.success("A legendary force answers your call...", icon="🌟")
+    if is_legendary: st.success("A legendary force answers your call...", icon="🌟")
     if is_shiny: st.success("Whoa! A rare Shiny partner appeared!", icon="✨"); st.balloons()
     
     st.subheader("Your Pokémon Partner is...")
@@ -88,36 +90,29 @@ def display_prediction(prediction_details):
     
     feedback_cols = st.columns(3)
     
-    if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True, key="fb_perfect"):
+    def handle_feedback():
         if log_feedback_to_sheet(profile_data_to_log):
-            st.toast("Thank you! Your bond has strengthened the Profiler!", icon="✨")
-            del st.session_state.prediction_details # Clear the state to return to quiz
-            time.sleep(2); st.rerun()
-
-    if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True, key="fb_close"):
-        if log_feedback_to_sheet(profile_data_to_log):
-            st.toast("Thanks! Your feedback is valuable.", icon="👍")
+            st.session_state.show_thank_you = True
             del st.session_state.prediction_details
-            time.sleep(2); st.rerun()
+            st.rerun()
 
-    if feedback_cols[2].button("❌ Not quite right", use_container_width=True, key="fb_not"):
-        if log_feedback_to_sheet(profile_data_to_log):
-            st.toast("Got it! Thanks for helping the Profiler learn.", icon="💡")
-            del st.session_state.prediction_details
-            time.sleep(2); st.rerun()
+    if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True):
+        handle_feedback()
+    if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True):
+        handle_feedback()
+    if feedback_cols[2].button("❌ Not quite right", use_container_width=True):
+        handle_feedback()
 
+def display_thank_you():
+    """Displays a confirmation screen after feedback is submitted."""
+    st.success("Thank you! Your feedback has been recorded and the Profiler is now learning from your insights.", icon="✨")
+    st.balloons()
+    if st.button("Take the Quiz Again!", use_container_width=True):
+        del st.session_state.show_thank_you
+        st.rerun()
 
-# --- MAIN APP LAYOUT ---
-st.title("Poké-Profiler 🔮")
-st.markdown("Answer the call of the wild! Describe yourself to discover your true Pokémon partner.")
-st.write("---")
-
-# --- STATE-BASED UI ROUTING ---
-if 'prediction_details' in st.session_state:
-    # If a prediction result exists in the session state, display it
-    display_prediction(st.session_state.prediction_details)
-else:
-    # Otherwise, display the quiz form
+def display_quiz():
+    """Displays the main quiz form."""
     with st.form("profiler_form"):
         st.subheader("Tell us about yourself...")
         environment = st.selectbox("Which environment do you feel most at home in?", ('Forests & Jungles', 'Oceans & Lakes', 'Mountains & Caves', 'Cities & Plains', 'Mysterious Places'))
@@ -140,14 +135,22 @@ else:
                     prediction = legendary_pool.sample(n=1)['pokemon_name'].iloc[0]
                     is_legendary_encounter = True
 
-        # Store all prediction details in a single session state dictionary
         st.session_state.prediction_details = {
             "name": prediction,
             "is_legendary": is_legendary_encounter,
             "is_shiny": (random.randint(1, 100) == 1),
         }
-        
-        # Save the raw input for the logging function later
         st.session_state.last_input = input_data.to_dict('records')
-        
-        st.rerun() # Rerun to trigger the display_prediction function
+        st.rerun()
+
+# --- MAIN APP ROUTER ---
+st.title("Poké-Profiler 🔮")
+st.markdown("Answer the call of the wild! Describe yourself to discover your true Pokémon partner.")
+st.write("---")
+
+if 'prediction_details' in st.session_state:
+    display_prediction()
+elif 'show_thank_you' in st.session_state:
+    display_thank_you()
+else:
+    display_quiz()
