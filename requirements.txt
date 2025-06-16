@@ -5,4 +5,4 @@ scikit-learn
 joblib
 gspread
 google-auth
-streamlit-gsheets
+streamlit-gsheets-connection
