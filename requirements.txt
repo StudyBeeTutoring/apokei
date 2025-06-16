@@ -4,4 +4,4 @@ sqlalchemy
 scikit-learn
 joblib
 streamlit-gsheets
-xgboost-3.0.2-py3-none-manylinux2014_x86_64.whl
+

@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 from sqlalchemy import text
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder, LabelEncoder
-import xgboost as xgb  # <-- ADDED IMPORT
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.ensemble import RandomForestClassifier
 import os
 import random
 import joblib
+from streamlit_gsheets.connection import GSheetsConnection
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="centered")
@@ -15,14 +16,17 @@ st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="center
 MODEL_PATH = "trained_pokemon_model.joblib"
 DATA_PATH = "pokemon_data.csv"
 
+# --- GOOGLE SHEETS CONNECTION ---
+# This establishes a connection to Google Sheets using the secrets you provided.
+conn_gsheets = st.connection("gsheets", type=GSheetsConnection)
 
-# --- DATA & MODEL LOADING (Updated for XGBoost) ---
+
+# --- DATA & MODEL LOADING ---
 @st.cache_resource
-def load_model_and_encoder():
-    """Loads the pre-trained pipeline and label encoder from disk."""
+def load_model():
+    """Loads the pre-trained model from disk."""
     if os.path.exists(MODEL_PATH):
-        saved_model = joblib.load(MODEL_PATH)
-        return saved_model['pipeline'], saved_model['label_encoder']
+        return joblib.load(MODEL_PATH)
     else:
         st.error(f"Fatal Error: `{MODEL_PATH}` not found. Please pre-train the model and upload it.")
         st.stop()
@@ -39,7 +43,7 @@ def load_pokemon_data():
 
 
 # --- INITIALIZATION ---
-pipeline, label_encoder = load_model_and_encoder()
+pipeline = load_model()
 pokemon_data_df = load_pokemon_data()
 POKEMON_INFO = pokemon_data_df.set_index('pokemon_name').to_dict('index')
 
@@ -68,11 +72,7 @@ if submitted:
     input_data = pd.DataFrame([[environment, battle_style, core_strength, personality]],
                               columns=['environment', 'battle_style', 'core_strength', 'personality'])
 
-    # Predict the numeric label first
-    predicted_label = pipeline.predict(input_data)[0]
-    # Decode the numeric label back to the Pokémon name
-    prediction = label_encoder.inverse_transform([predicted_label])[0]
-
+    prediction = pipeline.predict(input_data)[0]
     prediction_proba = pipeline.predict_proba(input_data)
     confidence = prediction_proba.max() * 100
 
@@ -107,5 +107,34 @@ if submitted:
 
     st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
 
-# The feedback loop and database logic do not need to be implemented for this fix.
-# The focus is on getting the app deployed with the better model.
+    # --- FEEDBACK LOOP ---
+    st.write("---")
+    st.write("**Is this your perfect partner?** Your feedback helps the Profiler get smarter!")
+    st.session_state.last_input = input_data.to_dict('records')[0]
+    st.session_state.last_prediction = prediction
+    feedback_cols = st.columns(3)
+    if feedback_cols[0].button("✅ It's a perfect match!",
+                               use_container_width=True): st.session_state.feedback_given = True
+    if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True): st.session_state.feedback_given = True
+    if feedback_cols[2].button("❌ Not quite right", use_container_width=True): st.session_state.feedback_given = True
+
+# --- LOGGING FEEDBACK TO GOOGLE SHEETS ---
+if st.session_state.get('feedback_given', False):
+    profile_data = st.session_state.last_input[0]
+    profile_data['pokemon_name'] = st.session_state.last_prediction
+    feedback_df = pd.DataFrame([profile_data])
+
+    # Append the data to the Google Sheet.
+    # IMPORTANT: Replace "PokeProfilerFeedback" with the exact name of your Google Sheet.
+    try:
+        conn_gsheets.update(worksheet="PokeProfilerFeedback", data=feedback_df)
+        st.toast("Thank you! The Profiler is now learning from your feedback.", icon="✨")
+    except Exception as e:
+        st.error("Could not save feedback. Please ensure your Google Sheets connection is set up correctly.")
+        st.error(f"Details: {e}")
+
+    # The developer can now download the data from Google Sheets and retrain the model offline.
+    del st.session_state.feedback_given
+    del st.session_state.last_input
+    del st.session_state.last_prediction
+    st.rerun()
