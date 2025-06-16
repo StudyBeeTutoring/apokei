@@ -8,7 +8,7 @@ import random
 import joblib
 import gspread
 from google.oauth2.service_account import Credentials
-import json
+import time
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="centered")
@@ -110,24 +110,33 @@ if submitted:
         stat_cols[2].metric("Defense", pokemon_info['defense'])
     st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
     
+    # --- REFACTORED FEEDBACK & LOGGING LOGIC ---
     st.write("---")
     st.write("**Is this your perfect partner?** Your feedback helps the Profiler get smarter!")
-    st.session_state.last_input = input_data.to_dict('records')[0]
-    st.session_state.last_prediction = prediction
+    
+    # Prepare the data dictionary *before* the buttons are created.
+    profile_data_to_log = input_data.to_dict('records')[0]
+    profile_data_to_log['pokemon_name'] = prediction
+    
     feedback_cols = st.columns(3)
-    if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True): st.session_state.feedback_given = True
-    if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True): st.session_state.feedback_given = True
-    if feedback_cols[2].button("❌ Not quite right", use_container_width=True): st.session_state.feedback_given = True
+    
+    # Each button now directly calls the logging function.
+    if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True):
+        if log_feedback_to_sheet(profile_data_to_log):
+            st.toast("Thank you! Your bond has strengthened the Profiler!", icon="✨")
+            time.sleep(2) # Give user time to read the toast
+            st.rerun()
 
-# --- LOGGING FEEDBACK TO GOOGLE SHEETS ---
-if st.session_state.get('feedback_given', False):
-    profile_data = st.session_state.last_input[0]
-    profile_data['pokemon_name'] = st.session_state.last_prediction
-    
-    if log_feedback_to_sheet(profile_data):
-        st.toast("Thank you! The Profiler is now learning from your feedback.", icon="✨")
-    
-    del st.session_state.feedback_given
-    del st.session_state.last_input
-    del st.session_state.last_prediction
-    st.rerun()
+    if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True):
+        if log_feedback_to_sheet(profile_data_to_log):
+            st.toast("Thanks! Your feedback is valuable.", icon="👍")
+            time.sleep(2)
+            st.rerun()
+
+    if feedback_cols[2].button("❌ Not quite right", use_container_width=True):
+        if log_feedback_to_sheet(profile_data_to_log):
+            st.toast("Got it! Thanks for helping the Profiler learn.", icon="💡")
+            time.sleep(2)
+            st.rerun()
+
+# --- The old logging block at the end of the file is now gone. ---
