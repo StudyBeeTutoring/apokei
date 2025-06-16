@@ -5,12 +5,44 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import OneHotEncoder
 import os
 import random
-# --- CORRECTED IMPORT ---
-from streamlit_extras.stylable_container import stylable_container # A more specific import
-from streamlit_extras.clipboard import button as clipboard_button # The correct clipboard button
+import json
+import streamlit.components.v1 as components # Import for custom components
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Poké-Profiler 2.0", page_icon="🔮", layout="wide")
+
+# --- CUSTOM COMPONENT FOR CLIPBOARD ---
+def create_share_button(text_to_copy):
+    """Creates a custom HTML button that copies text to the clipboard."""
+    # Safely encode the text for JavaScript
+    js_text = json.dumps(text_to_copy)
+
+    # Basic styling to make the button look nice
+    button_style = """
+        background-color: #F0F2F6;
+        color: #31333F;
+        border: 1px solid #D0D0D0;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        margin-right: 0.5rem;
+    """
+    
+    # The HTML and JavaScript for the component
+    components.html(f"""
+        <button id="clipButton" style="{button_style}">💌 Share Your Result!</button>
+        <script>
+            const btn = document.getElementById("clipButton");
+            btn.onclick = function() {{
+                navigator.clipboard.writeText({js_text});
+                btn.textContent = "✅ Copied!";
+                btn.disabled = true;
+            }}
+        </script>
+    """, height=50)
+
 
 # --- DATA LOADING & CACHING ---
 @st.cache_data
@@ -145,19 +177,13 @@ with tab1:
             
             st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
             
-            # --- SHARE & FEEDBACK ---
             st.write("---")
             # IMPORTANT: Replace this with your actual app's URL once deployed!
             app_url = "https://your-app-url.streamlit.app" 
             share_text = f"My perfect Pokémon partner is {prediction}! 🔮 Find yours at the Poké-Profiler: {app_url}"
             
             # --- CORRECTED SHARE BUTTON ---
-            # This is the correct way to implement the clipboard button.
-            clipboard_button(
-                label="💌 Share Your Result!",
-                text=share_text,
-                key="clipboard_button" # A unique key for the button
-            )
+            create_share_button(share_text)
 
             st.write("**Is this your perfect partner?** Your feedback helps the Profiler learn!")
             st.session_state.last_input = input_data.to_dict('records')[0]
