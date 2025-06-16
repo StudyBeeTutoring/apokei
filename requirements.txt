@@ -2,3 +2,4 @@ streamlit
 pandas
 sqlalchemy
 scikit-learn
+streamlit-extras
