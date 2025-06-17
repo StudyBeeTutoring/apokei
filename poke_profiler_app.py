@@ -21,8 +21,13 @@ DATA_PATH = "pokemon_data.csv"
 @st.cache_resource
 def connect_to_gsheets():
     try:
-        scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-        # THE FIX IS HERE: Access the nested dictionary
+        # Try this more specific list of scopes
+        scopes = [
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive.file"
+        ]
+        
+        # The rest of the function stays the same
         creds = Credentials.from_service_account_info(st.secrets["gcp_service_account"], scopes=scopes)
         client = gspread.authorize(creds)
         return client
