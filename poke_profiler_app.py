@@ -26,17 +26,42 @@ def connect_to_gsheets():
         client = gspread.authorize(creds)
         return client
     except Exception as e:
-        st.error(f"Failed to connect to Google Sheets. Check secrets. Details: {e}"); st.stop()
+        st.error(f"Failed to connect to Google Sheets. Check secrets. Details: {e}")
+        st.stop()
 
 def log_feedback_to_sheet(feedback_data):
     try:
         client = connect_to_gsheets()
         # IMPORTANT: Replace "PokeProfilerFeedback" with the exact name of your Google Sheet.
         sheet = client.open("PokeProfilerFeedback").sheet1
+        # Ensure the headers in your Google Sheet match the keys in feedback_data
+        # For example: environment, battle_style, core_strength, personality, pokemon_name, feedback
+        if sheet.row_count == 0:
+            sheet.append_row(list(feedback_data.keys())) # Add header row if sheet is empty
         sheet.append_row(list(feedback_data.values()))
         return True
     except Exception as e:
-        st.error(f"Failed to write to Google Sheet. Details: {e}"); return False
+        st.error(f"Failed to write to Google Sheet. Details: {e}")
+        return False
+
+# --- NEW: FEEDBACK CALLBACK FUNCTION ---
+def process_feedback(feedback_text):
+    """
+    Callback function to log feedback and update session state.
+    This function is executed when a feedback button is clicked, before the script reruns.
+    """
+    # 1. Prepare the data for logging by copying it from session state
+    profile_data_to_log = st.session_state.last_input[0].copy()
+    profile_data_to_log['pokemon_name'] = st.session_state.prediction_details['name']
+    profile_data_to_log['feedback'] = feedback_text # Log which button was clicked!
+
+    # 2. Log the data to the Google Sheet
+    if log_feedback_to_sheet(profile_data_to_log):
+        # 3. If logging is successful, update the session state to show the thank you message
+        st.session_state.show_thank_you = True
+        # Clean up the state so the prediction screen doesn't show anymore
+        del st.session_state.prediction_details
+    # No st.rerun() is needed. Streamlit automatically reruns after a callback.
 
 # --- DATA & MODEL LOADING ---
 @st.cache_resource
@@ -56,7 +81,10 @@ POKEMON_INFO = pokemon_data_df.set_index('pokemon_name').to_dict('index')
 
 # --- UI COMPONENTS ---
 def display_prediction():
-    """A dedicated function to display the prediction results and handle feedback."""
+    """
+    A dedicated function to display the prediction results and handle feedback.
+    This version uses on_click callbacks for robust state management.
+    """
     prediction_details = st.session_state.prediction_details
     prediction = prediction_details['name']
     is_legendary = prediction_details['is_legendary']
@@ -84,30 +112,38 @@ def display_prediction():
     
     st.write("---")
     st.write("**Is this your perfect partner?** Your feedback helps the Profiler get smarter!")
-    
-    profile_data_to_log = st.session_state.last_input[0]
-    profile_data_to_log['pokemon_name'] = prediction
-    
+        
     feedback_cols = st.columns(3)
     
-    def handle_feedback():
-        if log_feedback_to_sheet(profile_data_to_log):
-            st.session_state.show_thank_you = True
-            del st.session_state.prediction_details
-            st.rerun()
+    # Use on_click to call our new callback function.
+    # Use 'args' to pass the specific feedback text to the function.
+    feedback_cols[0].button(
+        "✅ It's a perfect match!",
+        on_click=process_feedback,
+        args=("Perfect Match",), # Note the comma to make it a tuple
+        use_container_width=True
+    )
+    feedback_cols[1].button(
+        "🤔 It's pretty close",
+        on_click=process_feedback,
+        args=("Pretty Close",),
+        use_container_width=True
+    )
+    feedback_cols[2].button(
+        "❌ Not quite right",
+        on_click=process_feedback,
+        args=("Not Right",),
+        use_container_width=True
+    )
 
-    if feedback_cols[0].button("✅ It's a perfect match!", use_container_width=True):
-        handle_feedback()
-    if feedback_cols[1].button("🤔 It's pretty close", use_container_width=True):
-        handle_feedback()
-    if feedback_cols[2].button("❌ Not quite right", use_container_width=True):
-        handle_feedback()
 
 def display_thank_you():
     """Displays a confirmation screen after feedback is submitted."""
     st.success("Thank you! Your feedback has been recorded and the Profiler is now learning from your insights.", icon="✨")
     st.balloons()
     if st.button("Take the Quiz Again!", use_container_width=True):
+        # To restart, just remove the flag that shows the thank you message.
+        # This will trigger a rerun and the router logic will show the quiz.
         del st.session_state.show_thank_you
         st.rerun()
 
@@ -135,6 +171,7 @@ def display_quiz():
                     prediction = legendary_pool.sample(n=1)['pokemon_name'].iloc[0]
                     is_legendary_encounter = True
 
+        # Store prediction details and user input in the session state
         st.session_state.prediction_details = {
             "name": prediction,
             "is_legendary": is_legendary_encounter,
@@ -148,6 +185,7 @@ st.title("Poké-Profiler 🔮")
 st.markdown("Answer the call of the wild! Describe yourself to discover your true Pokémon partner.")
 st.write("---")
 
+# This logic now works perfectly because the session state is managed correctly by the callbacks.
 if 'prediction_details' in st.session_state:
     display_prediction()
 elif 'show_thank_you' in st.session_state:
