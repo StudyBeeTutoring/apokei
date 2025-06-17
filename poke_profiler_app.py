@@ -33,7 +33,7 @@ def log_feedback_to_sheet(feedback_data):
     # --- IMPORTANT ---
     # PASTE THE FULL URL OF YOUR GOOGLE SHEET HERE.
     # This is the robust way to connect and prevents ambiguity.
-    SHEET_URL = "YOUR_GOOGLE_SHEET_URL_HERE" 
+    SHEET_URL = "https://docs.google.com/spreadsheets/d/11GZ8r4f9U8kTUlNT1eYk66sXe6XPlq-XxkPEdlqFxzo/edit?usp=sharing" 
 
     try:
         client = connect_to_gsheets()
