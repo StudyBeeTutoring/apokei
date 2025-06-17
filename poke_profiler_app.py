@@ -17,18 +17,18 @@ st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="center
 MODEL_PATH = "trained_pokemon_model.joblib"
 DATA_PATH = "pokemon_data.csv"
 
-# --- GOOGLE SHEETS CONNECTION ---
+
 @st.cache_resource
 def connect_to_gsheets():
     try:
         scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-        creds = Credentials.from_service_account_info(st.secrets, scopes=scopes)
+        # THE FIX IS HERE: Access the nested dictionary
+        creds = Credentials.from_service_account_info(st.secrets["gcp_service_account"], scopes=scopes)
         client = gspread.authorize(creds)
         return client
     except Exception as e:
         st.error(f"Failed to connect to Google Sheets. Check secrets. Details: {e}")
         st.stop()
-
 def log_feedback_to_sheet(feedback_data):
     try:
         client = connect_to_gsheets()
