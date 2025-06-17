@@ -35,38 +35,25 @@ def connect_to_gsheets():
         st.error(f"Failed to connect to Google Sheets. Check secrets. Details: {e}")
         st.stop()
 def log_feedback_to_sheet(feedback_data):
+    # PASTE YOUR GOOGLE SHEET URL HERE
+    # Make sure it is inside the quotes.
+    SHEET_URL = "https://docs.google.com/spreadsheets/d/11GZ8r4f9U8kTUlNT1eYk66sXe6XPlq-XxkPEdlqFxzo/edit?usp=sharing"
+
     try:
-        # --- Existing debug block to see what we are trying to send ---
         st.warning("DEBUG: Preparing to write the following data to Google Sheets...")
         st.json(feedback_data)
         values_to_append = list(feedback_data.values())
         
-        # --- Connect to Google Sheets ---
+        # Connect to Google Sheets
         client = connect_to_gsheets()
-        sheet = client.open("PokeProfilerFeedback").sheet1
-
-        # --- NEW!! DEEPER DEBUGGING BLOCK ---
-        # This will tell us exactly what sheet the program has opened.
-        st.info("DEBUG: Inspecting the opened Google Sheet...")
-        try:
-            st.write(f"**Sheet URL:** {sheet.url}") # This is the most important line!
-            st.write(f"**Worksheet Title:** {sheet.title}")
-            st.write(f"**Total Columns in Sheet:** {sheet.col_count}")
-            
-            # Get the headers from the first row
-            headers = sheet.row_values(1)
-            st.write("**Headers Found in Sheet (Row 1):**")
-            st.write(headers)
-            st.write(f"**Number of Headers Found:** {len(headers)}")
-            st.write(f"**Number of Values We Are Sending:** {len(values_to_append)}")
-            
-            if len(headers) < len(values_to_append):
-                st.error("FATAL MISMATCH: The number of values to send is greater than the number of columns in the sheet. The sheet structure being read is outdated or incorrect.")
-            
-        except Exception as inspect_error:
-            st.error(f"DEBUG FAILED: Could not inspect the sheet. Error: {inspect_error}")
-        # --- END NEW DEBUGGING BLOCK ---
-
+        
+        # --- THE FIX: Opening by URL instead of by name ---
+        st.info("DEBUG: Attempting to open sheet by specific URL...")
+        spreadsheet = client.open_by_url(SHEET_URL)
+        sheet = spreadsheet.sheet1
+        st.success("DEBUG: Successfully opened sheet by URL!")
+        # --- END FIX ---
+        
         # Sanitize and append the row
         safe_values_to_append = [str(v) for v in values_to_append]
         st.success("DEBUG: Attempting to send sanitized data now...")
@@ -78,8 +65,8 @@ def log_feedback_to_sheet(feedback_data):
         return True
         
     except Exception as e:
-        # The error will now hopefully be more descriptive, or the code won't error at all.
         st.error(f"Failed to write to Google Sheet. Details: {e}")
+        st.write("If the error is 'SpreadsheetNotFound', please double-check that you have shared the sheet at the URL above with your service account's client_email.")
         return False
 # --- NEW: FEEDBACK CALLBACK FUNCTION ---
 def process_feedback(feedback_text):
