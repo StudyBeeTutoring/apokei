@@ -35,38 +35,26 @@ def connect_to_gsheets():
         st.error(f"Failed to connect to Google Sheets. Check secrets. Details: {e}")
         st.stop()
 def log_feedback_to_sheet(feedback_data):
-    # PASTE YOUR GOOGLE SHEET URL HERE
-    # Make sure it is inside the quotes.
-    SHEET_URL = "https://docs.google.com/spreadsheets/d/11GZ8r4f9U8kTUlNT1eYk66sXe6XPlq-XxkPEdlqFxzo/edit?usp=sharing"
+    # Paste your Google Sheet URL here. This is the robust way to connect.
+    SHEET_URL = "YOUR_GOOGLE_SHEET_URL_HERE" # Make sure this is still your correct URL
 
     try:
-        st.warning("DEBUG: Preparing to write the following data to Google Sheets...")
-        st.json(feedback_data)
-        values_to_append = list(feedback_data.values())
-        
-        # Connect to Google Sheets
         client = connect_to_gsheets()
         
-        # --- THE FIX: Opening by URL instead of by name ---
-        st.info("DEBUG: Attempting to open sheet by specific URL...")
-        spreadsheet = client.open_by_url(SHEET_URL)
+        spreadsheet = client.open_by_url(https://docs.google.com/spreadsheets/d/11GZ8r4f9U8kTUlNT1eYk66sXe6XPlq-XxkPEdlqFxzo/edit?usp=sharing)
         sheet = spreadsheet.sheet1
-        st.success("DEBUG: Successfully opened sheet by URL!")
-        # --- END FIX ---
         
-        # Sanitize and append the row
-        safe_values_to_append = [str(v) for v in values_to_append]
-        st.success("DEBUG: Attempting to send sanitized data now...")
-        sheet.append_row(safe_values_to_append)
+        # Convert all values to simple strings before sending to prevent format errors
+        values_to_append = [str(v) for v in feedback_data.values()]
         
-        st.success("Feedback logged successfully!")
-        time.sleep(2) 
+        # Append the new row
+        sheet.append_row(values_to_append)
         
         return True
         
     except Exception as e:
-        st.error(f"Failed to write to Google Sheet. Details: {e}")
-        st.write("If the error is 'SpreadsheetNotFound', please double-check that you have shared the sheet at the URL above with your service account's client_email.")
+        # Provide a helpful error message to the user if something goes wrong
+        st.error(f"Failed to write to Google Sheet. Please try again later. Details: {e}")
         return False
 # --- NEW: FEEDBACK CALLBACK FUNCTION ---
 def process_feedback(feedback_text):
