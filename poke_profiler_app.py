@@ -36,19 +36,45 @@ def connect_to_gsheets():
         st.stop()
 def log_feedback_to_sheet(feedback_data):
     try:
+        # --- START DEBUGGING BLOCK ---
+        # This will show us the exact data in the app UI before we try to send it.
+        st.warning("DEBUG: Preparing to write the following data to Google Sheets...")
+        st.json(feedback_data) # st.json displays dictionaries nicely
+        
+        values_to_append = list(feedback_data.values())
+        st.write("DEBUG: Values extracted for the row:")
+        st.write(values_to_append)
+        
+        st.write("DEBUG: Checking data types of each value:")
+        for i, val in enumerate(values_to_append):
+            st.write(f"  - Value {i} (`{val}`) is of type: `{type(val)}`")
+        # --- END DEBUGGING BLOCK ---
+
         client = connect_to_gsheets()
         # IMPORTANT: Replace "PokeProfilerFeedback" with the exact name of your Google Sheet.
         sheet = client.open("PokeProfilerFeedback").sheet1
-        # Ensure the headers in your Google Sheet match the keys in feedback_data
-        # For example: environment, battle_style, core_strength, personality, pokemon_name, feedback
-        if sheet.row_count == 0:
-            sheet.append_row(list(feedback_data.keys())) # Add header row if sheet is empty
-        sheet.append_row(list(feedback_data.values()))
+        
+        # --- DATA SANITIZATION STEP ---
+        # This is the most likely fix. We convert every value to a plain string
+        # before sending it to Google Sheets to prevent format errors.
+        safe_values_to_append = [str(v) for v in values_to_append]
+        
+        st.success("DEBUG: Sending sanitized (string-converted) data now.")
+        st.write(safe_values_to_append)
+
+        sheet.append_row(safe_values_to_append)
+        
+        # After a successful write, we can clear the debug messages
+        st.success("Feedback logged successfully!")
+        # A small delay to let the user see the success message before the page changes
+        time.sleep(2) 
+        
         return True
+        
     except Exception as e:
+        # The error will now hopefully be more descriptive, or the code won't error at all.
         st.error(f"Failed to write to Google Sheet. Details: {e}")
         return False
-
 # --- NEW: FEEDBACK CALLBACK FUNCTION ---
 def process_feedback(feedback_text):
     """
