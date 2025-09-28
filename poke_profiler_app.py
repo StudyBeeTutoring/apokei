@@ -106,8 +106,13 @@ def display_prediction():
     with col2:
         title = f"{prediction} ✨" if is_shiny else prediction
         st.markdown(f"## {title}")
-        type2_info = f" / `{pokemon_info['type2'].capitalize()}`" if pd.notna(pokemon_info.get('type2')) else ""
+        
+        # --- FIX APPLIED HERE ---
+        # Use .get() to safely access 'type2' which may not exist
+        type2_val = pokemon_info.get('type2')
+        type2_info = f" / `{type2_val.capitalize()}`" if pd.notna(type2_val) else ""
         st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`{type2_info}")
+
         st.write("**Base Stats:**")
         stat_cols = st.columns(3)
         stat_cols[0].metric("HP", pokemon_info['hp'])
@@ -198,8 +203,13 @@ def display_search_results(search_query):
             with col2:
                 title = f"{pokemon_info['pokemon_name']} ✨" if is_shiny else pokemon_info['pokemon_name']
                 st.markdown(f"### {title}")
-                type2_info = f" / `{pokemon_info['type2'].capitalize()}`" if pd.notna(pokemon_info['type2']) else ""
+                
+                # --- FIX APPLIED HERE ---
+                # Use .get() to safely access 'type2' from the pandas Series
+                type2_val = pokemon_info.get('type2')
+                type2_info = f" / `{type2_val.capitalize()}`" if pd.notna(type2_val) else ""
                 st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`{type2_info}")
+                
                 st.write("**Base Stats:**")
                 stat_cols = st.columns(3)
                 stat_cols[0].metric("HP", pokemon_info['hp'])
