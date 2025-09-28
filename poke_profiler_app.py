@@ -11,7 +11,7 @@ from google.oauth2.service_account import Credentials
 import time
 
 # --- PAGE CONFIGURATION ---
-st.set_page_config(page_title="Poké-Profiler", page_icon="🔮", layout="centered")
+st.set_page_config(page_title="Poké-Profiler & Dex", page_icon="🔮", layout="centered")
 
 # --- MODEL AND DATA FILENAMES ---
 MODEL_PATH = "trained_pokemon_model.joblib"
@@ -33,7 +33,7 @@ def log_feedback_to_sheet(feedback_data):
     # --- IMPORTANT ---
     # PASTE THE FULL URL OF YOUR GOOGLE SHEET HERE.
     # This is the robust way to connect and prevents ambiguity.
-    SHEET_URL = "https://docs.google.com/spreadsheets/d/11GZ8r4f9U8kTUlNT1eYk66sXe6XPlq-XxkPEdlqFxzo/edit?usp=sharing" 
+    SHEET_URL = "https://docs.google.com/spreadsheets/d/11GZ8r4f9U8kTUlNT1eYk66sXe6XPlq-XxkPEdlqFxzo/edit?usp=sharing"
 
     try:
         client = connect_to_gsheets()
@@ -106,7 +106,8 @@ def display_prediction():
     with col2:
         title = f"{prediction} ✨" if is_shiny else prediction
         st.markdown(f"## {title}")
-        st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`")
+        type2_info = f" / `{pokemon_info['type2'].capitalize()}`" if pd.notna(pokemon_info.get('type2')) else ""
+        st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`{type2_info}")
         st.write("**Base Stats:**")
         stat_cols = st.columns(3)
         stat_cols[0].metric("HP", pokemon_info['hp'])
@@ -149,7 +150,8 @@ def display_thank_you():
 def display_quiz():
     """Displays the main quiz form."""
     with st.form("profiler_form"):
-        st.subheader("Tell us about yourself...")
+        st.subheader("Discover Your Partner")
+        st.write("Answer these questions to find your Pokémon companion.")
         environment = st.selectbox("Which environment do you feel most at home in?", ('Forests & Jungles', 'Oceans & Lakes', 'Mountains & Caves', 'Cities & Plains', 'Mysterious Places'))
         personality = st.radio("Which best describes your personality?", ['Bold & Competitive', 'Calm & Loyal', 'Mysterious & Cunning', 'Energetic & Free-Spirited', 'Adaptable & Friendly'])
         core_strength = st.selectbox("What do you value most in a partner?", ('Raw Power', 'Resilience', 'Speed & Evasion', 'Versatility'))
@@ -178,14 +180,53 @@ def display_quiz():
         st.session_state.last_input = input_data.to_dict('records')
         st.rerun()
 
-# --- MAIN APP ROUTER ---
-st.title("Poké-Profiler 🔮")
-st.markdown("Answer the call of the wild! Describe yourself to discover your true Pokémon partner.")
-st.write("---")
+def display_search_results(search_query):
+    """Displays Pokémon data based on a search query."""
+    results = pokemon_data_df[pokemon_data_df['pokemon_name'].str.contains(search_query, case=False)]
 
-if 'prediction_details' in st.session_state:
-    display_prediction()
-elif 'show_thank_you' in st.session_state:
-    display_thank_you()
+    if not results.empty:
+        st.write(f"Found {len(results)} matching Pokémon:")
+        for _, pokemon_info in results.iterrows():
+            st.write("---")
+            # For fun, let's keep the shiny chance on search
+            is_shiny = (random.randint(1, 4096) == 1)
+            img_to_display = pokemon_info['shiny_img_url'] if is_shiny else pokemon_info['img_url']
+            
+            col1, col2 = st.columns([1, 2])
+            with col1:
+                st.image(img_to_display, width=150)
+            with col2:
+                title = f"{pokemon_info['pokemon_name']} ✨" if is_shiny else pokemon_info['pokemon_name']
+                st.markdown(f"### {title}")
+                type2_info = f" / `{pokemon_info['type2'].capitalize()}`" if pd.notna(pokemon_info['type2']) else ""
+                st.markdown(f"**Type:** `{pokemon_info['type1'].capitalize()}`{type2_info}")
+                st.write("**Base Stats:**")
+                stat_cols = st.columns(3)
+                stat_cols[0].metric("HP", pokemon_info['hp'])
+                stat_cols[1].metric("Attack", pokemon_info['attack'])
+                stat_cols[2].metric("Defense", pokemon_info['defense'])
+
+            st.info(f"**Pokédex Entry:** *{pokemon_info['pokedex_entry']}*")
+    else:
+        st.warning(f"No Pokémon found matching '{search_query}'.")
+
+# --- MAIN APP ROUTER ---
+st.title("Poké-Profiler & Dex 🔮")
+st.markdown("Answer the call of the wild to discover your true Pokémon partner, or use the Pokédex to find a specific Pokémon!")
+
+# Search functionality
+st.write("---")
+st.subheader("Look Up a Pokémon")
+search_term = st.text_input("Enter Pokémon Name to search the Pokédex:", "")
+
+if search_term:
+    display_search_results(search_term)
 else:
-    display_quiz()
+    # Quiz and Prediction Logic
+    st.write("---")
+    if 'prediction_details' in st.session_state:
+        display_prediction()
+    elif 'show_thank_you' in st.session_state:
+        display_thank_you()
+    else:
+        display_quiz()
